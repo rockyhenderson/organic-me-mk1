@@ -1,0 +1,20 @@
+body{
+    background-color: linen;
+}
+#top-section{
+    background-color: #57ac49;
+    border-radius: 20px;
+    margin: 1vw;
+    height:40vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    padding: 3vh;
+}
+#nav-right, #nav-left{
+    width:50%;
+}
+.contact-button{
+    float: right;
+}
