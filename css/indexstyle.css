@@ -33,6 +33,7 @@ li, a{
     text-decoration: none;
     color:white;
     padding-top:10px;
+    display:block;
 
 }
 button{
