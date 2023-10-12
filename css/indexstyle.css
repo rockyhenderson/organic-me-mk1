@@ -3,10 +3,6 @@ body{
 }
 #top-section{
     background-color: #57ac49;
-    border-radius: 20px;
-    margin: 1vw;
-    height:40vh;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    height:200px;
 }
 
