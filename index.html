@@ -20,19 +20,45 @@
   </head>
   <body>
     <div id="top-section">
-      <nav>
-          <img href="img/boostrapLogo.svg" alt="The Logo">
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Products</a>
-          <a>Contact</a>
-          <a>Come Visit</a>
-          <button class="contact-button">Contact</button>
+      <nav class="navbar navbar-expand-md ">
+        <!-- Meduim Breakpoint -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/boostrapLogo.svg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Bootstrap Website
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link"  href="index.html">Home</a>
+            <a class="nav-link"  href="video.html">Video</a>
+            <a class="nav-link"  href="carousel.html">Carousel</a>
+            <a class="nav-link" href="links.html">Map</a>
+            <a class="nav-link active" aria-current="page" href="form.html">Form</a>
+            <form class="form-inline">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+          </div>
+        </div>
       </nav>
-
-      <p>
-
-      </p>
+          
     </div>
   </body>
 </html>
