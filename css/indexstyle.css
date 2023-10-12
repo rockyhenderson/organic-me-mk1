@@ -56,6 +56,7 @@ button{
     border-radius: 40px;
     display:flex;
     justify-content:space-between;
+    margin-bottom:10vh;
 }
 @media only screen and (max-width: 845px) {
     .statement-box{
@@ -74,13 +75,11 @@ button{
 }
 .image-box{
     background-color: white;
-    height:20vh;
+    height:50vh;
     padding:2vh;
-    margin-top:2vh;
     border-radius: 40px;
     display:flex;
     justify-content:space-between;
-    height:20vh;
     padding-left:0px;
 }
 .right-statement-box{
@@ -98,7 +97,7 @@ button{
     height: 50vh;
 }
 .choose-us-box{
-    background-color: #57ac49;
+    background-color: green;
     color:white;
     display: flex;
     justify-content: space-evenly;
@@ -109,5 +108,24 @@ button{
     margin-bottom: 100px;
     z-index: 1;
     width:50vw;
-    border-bottom:solid 20px #7bc270;
+    border-bottom:solid 20px #57ac49;
+
+}
+.product-box{
+    text-align: center;
+    font-size: 25;
+}
+.product-section{
+    display: flex;
+    justify-content: space-around;
+    width:70vw;
+    background-color: hotpink;
+    margin:auto;
+}
+.main-product{
+    width:50%;
+    background-color: red;
+}
+.sub-product{
+    width:25%;
 }
