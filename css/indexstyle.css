@@ -1,8 +1,10 @@
 body{
     background-color: linen;
+    color:white;
 }
 .top-section{
     background-color: #57ac49;
+    padding-top:2vh;
     border-radius: 20px;
     margin: 1vw;
     height:40vh;
