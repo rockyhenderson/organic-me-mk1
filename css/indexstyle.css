@@ -1,10 +1,10 @@
 body{
     font-family: 'ADLaM Display';
-    background-color: hotpink;
+    background-color: white;
 }
 .head-content{
-    background-color: #57ac49;
-    height:50vh;
+    background-color: green;
+    height:60vh;
     padding:2vh;
     border-radius: 40px;
 }
@@ -21,6 +21,7 @@ ul{
     width:50%;
     text-align: center;
     justify-content:space-around
+    
 }
 #button-container{
     width:50%;
@@ -43,5 +44,12 @@ button{
     width:15%;
     text-align: center;
     color:white;
+}
+.statement-box{
+    background-color: white;
+    height:30vh;
+    padding:2vh;
+    margin-top:2vh;
+    border-radius: 40px;
 }
 
