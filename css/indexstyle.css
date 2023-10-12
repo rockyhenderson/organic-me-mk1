@@ -39,6 +39,7 @@ li, a{
 
 }
 button{
+    margin-right:20px;
     background-color: transparent;
     border: 3px #d5a038 solid;
     border-radius: 10px;
@@ -114,6 +115,7 @@ button{
 .product-box{
     text-align: center;
     font-size: 25;
+    color:black;
 }
 .product-section{
     display: flex;
@@ -125,9 +127,26 @@ button{
 }
 .main-product{
     width:50%;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 25px;
 
 }
 .sub-product{
     width:22%;
+    
+}
+.centered {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.product-img:hover{
+    filter: blur(3.5px);
+}
+.head-row{
+    display: flex;
     
 }
