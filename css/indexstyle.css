@@ -100,4 +100,7 @@ button{
     padding-bottom:10px;
     padding-left:30px;
     margin-bottom: 100px;
+    z-index: 1;
+    width:50vw;
+    border-bottom:solid 20px #d5a038;
 }
