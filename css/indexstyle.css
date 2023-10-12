@@ -1,13 +1,47 @@
 body{
-    background-color: linen;
+    font-family: 'ADLaM Display';
+    background-color: hotpink;
+}
+.head-content{
+    background-color: #57ac49;
+    height:50vh;
+    padding:2vh;
+    border-radius: 40px;
+}
+nav{
+    display: flex;
+    height:40px;
     color:white;
 }
-.top-section{
-    background-color: #57ac49;
-    padding-top:2vh;
-    border-radius: 20px;
-    margin: 1vw;
-    height:40vh;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0px;
+    width:50%;
+    text-align: center;
+    justify-content:space-around
 }
+#button-container{
+    width:50%;
+    display: flex;
+    justify-content:end;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color:white;
+    padding-top:10px;
+
+}
+button{
+    background-color: transparent;
+    border: 3px #d5a038 solid;
+    border-radius: 10px;
+    font-family: 'ADLaM Display';
+    height:auto;
+    width:15%;
+    text-align: center;
+    color:white;
+}
+
