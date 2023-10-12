@@ -46,11 +46,58 @@ button{
     text-align: center;
     color:white;
 }
-.statement-box{
+.statement-box{ /* add breakpoint to stack these boxes */
     background-color: white;
-    height:30vh;
+    height:20vh;
     padding:2vh;
     margin-top:2vh;
     border-radius: 40px;
+    display:flex;
+    justify-content:space-between;
+}
+@media only screen and (max-width: 845px) {
+    .statement-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-box, .right-box{
+        margin:auto;
+    }
+
 }
 
+.left-box, .right-box{
+
+    width:50vw;
+}
+.image-box{
+    background-color: white;
+    height:20vh;
+    padding:2vh;
+    margin-top:2vh;
+    border-radius: 40px;
+    display:flex;
+    justify-content:space-between;
+    height:20vh;
+}
+.right-statement-box{
+    width:40vw;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.left-image-box{
+    width:60vw;
+    display: flex;
+    justify-content: flex-end;
+    height: 50vh;
+}
+.choose-us-box{
+    background-color: #57ac49;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    margin-bottom: 100px;
+}
