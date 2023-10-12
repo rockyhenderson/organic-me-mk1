@@ -116,6 +116,8 @@ button{
     text-align: center;
     font-size: 25;
     color:black;
+    margin-top:5vh;
+    color:white
 }
 .product-section{
     display: flex;
@@ -135,7 +137,10 @@ button{
 }
 .sub-product{
     width:22%;
-    
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 25px;
 }
 .centered {
     position: absolute;
