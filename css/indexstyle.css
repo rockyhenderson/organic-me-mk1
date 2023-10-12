@@ -1,12 +1,14 @@
 body{
     font-family: 'ADLaM Display';
     background-color: white;
+    margin:0px;
 }
 .head-content{
     background-color: green;
     height:60vh;
     padding:2vh;
     border-radius: 40px;
+    margin:10px;
 }
 nav{
     display: flex;
@@ -79,6 +81,7 @@ button{
     display:flex;
     justify-content:space-between;
     height:20vh;
+    padding-left:0px;
 }
 .right-statement-box{
     width:40vw;
@@ -96,11 +99,15 @@ button{
 }
 .choose-us-box{
     background-color: #57ac49;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
     padding-top:10px;
+    margin-top:2vh;
     padding-bottom:10px;
     padding-left:30px;
     margin-bottom: 100px;
     z-index: 1;
     width:50vw;
-    border-bottom:solid 20px #d5a038;
+    border-bottom:solid 20px #7bc270;
 }
