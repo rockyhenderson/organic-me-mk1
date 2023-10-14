@@ -2,7 +2,7 @@ body{
     font-family: 'ADLaM Display';
     background-color: linen;
     margin:0;
-
+    overflow-x: hidden;
     width: 99vw;
 }
 .head-content{
@@ -176,7 +176,7 @@ button{
     position: relative;
     text-align: center;
     font-size: 40px;
-    color:#254c50; 
+    color:black; 
 
 }
 .sub-product{
@@ -187,11 +187,14 @@ button{
 }
 .centered {
     position: absolute;
-    top: 36%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .head-row{
     display: flex;
     
+}
+.product-honey{
+    margin:0px;
 }
