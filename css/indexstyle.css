@@ -73,44 +73,85 @@ button{
 .left-box, .right-box{
     width:50vw;
 }
-.image-box{
+
+.image-box {
     background-color: white;
-    height:50vh;
-    padding:2vh;
+    height: 50vh;
+    padding: 2vh;
     border-radius: 40px;
-    display:flex;
-    justify-content:space-between;
-    padding-left:0px;
-}
-.right-statement-box{
-    width:40vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+  .right-statement-box {
+    width: 40vw;
     height: 50vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
-}
-.left-image-box{
-    width:60vw;
+  }
+  .left-image-box {
+    width: 60vw;
     display: flex;
     justify-content: flex-end;
     height: 50vh;
-}
-.choose-us-box{
+  }
+  .choose-us-box {
     background-color: green;
-    color:white;
+    color: white;
     display: flex;
     justify-content: space-evenly;
-    padding-top:10px;
-    margin-top:2vh;
-    padding-bottom:10px;
-    padding-left:30px;
-    margin-bottom: 100px;
+    padding-top: 10px;
+    margin-top: 2vh;
+    padding-bottom: 0px;
     z-index: 1;
+    width: 50vw;
+    height:40vh;
+    /* border-bottom:solid 20px #57ac49; */
+  }
+  .circle-wrapper {
+    width: 5%;
+    height: auto;
+    position: relative;
+    height:100%;
+    z-index: 1;
+  }
+  
+  .circ {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #d5a038;
+    border-radius: 100% 0 0 0;
+  }
+  .choose-us-border{
+    background-color: #57ac49;;
+    height:3vh;
     width:50vw;
-    border-bottom:solid 20px #57ac49;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10vh;
+    
+  }
 
+.half-circle-wrapper{
+    width:10%;
+    position: absolute;
+    z-index: 2;
 }
+.half-circle{
+    display: block;
+    background-color: #d5a038;
+    height:12vh;
+    width:6vh;
+    border-radius: 0px;
+    border-bottom-right-radius: 90px; 
+    border-top-right-radius: 90px;
+  }
+
 .product-box{
     text-align: center;
     font-size: 25;
