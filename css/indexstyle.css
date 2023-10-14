@@ -1,7 +1,7 @@
 body{
     font-family: 'ADLaM Display';
-    background-color: white;
-    margin:0px;
+    background-color: linen;
+    margin:0;
 }
 .head-content{
     background-color: #57ac49;
@@ -50,7 +50,6 @@ button{
     color:white;
 }
 .statement-box{ /* add breakpoint to stack these boxes */
-    background-color: white;
     height:20vh;
     padding:2vh;
     margin-top:2vh;
@@ -75,9 +74,7 @@ button{
 }
 
 .image-box {
-    background-color: white;
     height: 50vh;
-    padding-top: 2vh;
     padding-bottom:2vh;
     border-radius: 40px;
     display: flex;
@@ -123,8 +120,8 @@ button{
     right: 0;
     bottom: 0;
     position: absolute;
-    height: 5vh;
-    width: 5vh;
+    height: 7vh;
+    width: 7vh;
     background-color: #d5a038;
     border-radius: 100% 0 0 0;
   }
