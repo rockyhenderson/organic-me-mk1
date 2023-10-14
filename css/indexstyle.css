@@ -77,7 +77,8 @@ button{
 .image-box {
     background-color: white;
     height: 50vh;
-    padding: 2vh;
+    padding-top: 2vh;
+    padding-bottom:2vh;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
@@ -98,7 +99,7 @@ button{
     height: 50vh;
   }
   .choose-us-box {
-    background-color: green;
+    background-color: #57ac49;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -128,7 +129,7 @@ button{
     border-radius: 100% 0 0 0;
   }
   .choose-us-border{
-    background-color: #57ac49;;
+    background-color: #7bc270;;
     height:5vh;
     width:50vw;
     display: flex;
