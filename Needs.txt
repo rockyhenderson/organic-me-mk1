@@ -1,0 +1,2 @@
+Need to udpate all font with vw instead of px to scale with page
+need to add breakpoints for EVERYTHING
