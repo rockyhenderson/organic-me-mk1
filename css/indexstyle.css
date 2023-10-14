@@ -198,3 +198,8 @@ button{
 .product-honey{
     margin:0px;
 }
+.product-head-wrapper{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
