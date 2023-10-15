@@ -10,6 +10,7 @@ body {
   margin: 1vw;
   border-radius: 25px;
   padding-bottom:20px;
+  margin-bottom:5vh;
 }
 nav {
   font-size: 2.5vh;
@@ -50,10 +51,16 @@ button {
     background-color: green;
     width:50%;
 }
+.head-content-text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .statement-box-wrapper{
     height: 20vh;
     margin-top: 2vh;
-    position: fixed;
 }
 .statement-box {
   /* add breakpoint to stack these boxes */
@@ -76,9 +83,12 @@ button {
   }
 }
 
-.left-box,
+.left-box{
+    padding-left:3%;
+    width:50vw;
+}
 .right-box {
-  width: 50vw;
+    width:45vw;
 }
 
 .image-box {
