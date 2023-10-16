@@ -135,6 +135,9 @@ button {
   height: 40vh;
   /* border-bottom:solid 20px #57ac49; */
 }
+.sticker-wrapper{
+  width: 30%;display: flex; flex-direction: column; justify-content: center;
+}
 .circle-wrapper {
   width: 5%;
   height: auto;
