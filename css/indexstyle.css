@@ -80,16 +80,6 @@ button {
   margin-bottom: 10vh;
   overflow: hidden;
 }
-@media only screen and (max-width: 845px) {
-  .statement-box {
-    display: flex;
-    flex-direction: column;
-  }
-  .left-box,
-  .right-box {
-    margin: auto;
-  }
-}
 
 .left-box{
     padding-left:3%;

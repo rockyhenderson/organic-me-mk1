@@ -1,0 +1,13 @@
+@media only screen and (max-width: 845px) {
+    .statement-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .left-box,
+    .right-box {
+      margin: auto;
+    }
+  }
+@media only screen and (max-width:992px){
+    
+}
