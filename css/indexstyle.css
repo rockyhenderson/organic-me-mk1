@@ -207,3 +207,23 @@ button {
   flex-direction: row;
   position: relative;
 }
+.footer-border{
+ background-color: #7bc270;
+ height:5vh;
+}
+footer{
+  background-color: #57ac49 ;
+  height:35vh;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.footer-section{
+  width:20%;
+  height:34vh;
+  padding-top:20px;
+}
+.social-icon{
+  height: 25px;
+  width:25px;
+}
