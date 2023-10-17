@@ -51,8 +51,8 @@
     justify-content: space-evenly;
     padding-top: 10px;
     z-index: 1;
-    width: 30vw;
-    height: 50vh;
+    width: 20vw;
+    height: 70vh;
     padding-left: 20px;
     /* border-bottom:solid 20px #57ac49; */
   }
@@ -62,7 +62,7 @@
   .choose-us-border {
     background-color: #7bc270;
     height: 5vh;
-    width: 30vw;
+    width: 20vw;
     display: flex;
     justify-content: flex-end;
   }
@@ -73,17 +73,26 @@
   }
   .left-image-box {
     margin-top: 10vh;
-    width:80vh;
-    height:45vw;
+    width:100vw;
+    height:70vh;
+    display: flex;  
+    flex-direction: column;
   }
-  .farmscape-img{
-    height:100%;
+  .farmscape-img, .farmscape-img-mobile{
+    height:33.333333333333333333333333333333333333%;
     width:100%;
 
   }
   .top-of-statement-header{
     height:10vh;
     white-space:nowrap;
+  }
+  .sticker-wrapper{
+    width:auto;
+    height:33%;
+  }
+  .farmscape-img-mobile{
+    display: block;
   }
 }
 
