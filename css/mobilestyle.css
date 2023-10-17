@@ -98,23 +98,6 @@
   .why-choose-use-text{
     padding-left:20px;
   }
-  .product-box{
-     margin-top:300px /*for some reason this is the only way i can get a margin to apply itself, please dont remove this future me */
-  }
-  .product-grey-circles{ /*temp measure into i can fit them in */
-    display: none;
-  }
-  .product-section{
-    flex-direction: column;
-  }
-  .main-product {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-  }
-  .sub-product{
-    width:50%;
-  }
 }
 
 
