@@ -1,13 +1,78 @@
-@media only screen and (max-width: 845px) {
-    .statement-box {
-      display: flex;
-      flex-direction: column;
-    }
-    .left-box,
-    .right-box {
-      margin: auto;
-    }
+.product-box, .footer-border, footer{
+  display: none;
+}
+@media (max-width: 992px) { 
+  .head-img-content{
+    display: none;
   }
-@media only screen and (max-width:992px){
+  .head-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .head-text-content{
+    width:90%;
+  }
+  .head-content{
+    margin:0px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .statement-box {
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left-box{
+    padding-left:0;
+    width:100%;
+    text-align: center;
     
+  }
+  .right-box {
+    width:100%;
+    padding-right:0;
+    text-align: center;
+  }
+  .grey-circle-bh-img{
+    display: none;
+  }
+  .choose-us-box {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-top: 2vh;
+    padding-bottom: 0px;
+    z-index: 1;
+    width: 30vw;
+    height: 50vh;
+    /* border-bottom:solid 20px #57ac49; */
+  }
+  .half-circle-filler{
+    display: none;
+  }
+
+
+
+
+}
+
+
+
+@media (max-width: 550px) { 
+  .fresh-handpicked-text{
+    font-size:20vw;
+  }
+  .healthy-lifestyle-content{
+    font-size: 3vw;
+  }
+}
+@media (max-width: 400px) { 
+  .fresh-handpicked-text{
+    font-size:75px;
+  }
+  .healthy-lifestyle-content{
+    font-size: 14px;
+  }
 }
