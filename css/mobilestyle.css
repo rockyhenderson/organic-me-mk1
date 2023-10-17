@@ -17,12 +17,14 @@
     margin:0px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    margin-bottom: 10vh;
   }
   .statement-box {
     height:30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: inline;
   }
   .left-box{
     padding-left:0;
@@ -38,24 +40,51 @@
   .grey-circle-bh-img{
     display: none;
   }
+  .image-box{
+    margin-top: 10vh;
+    height:60vh;
+    position: ab;
+  }
+
   .choose-us-box {
     flex-direction: column;
     justify-content: space-evenly;
     padding-top: 10px;
-    margin-top: 2vh;
-    padding-bottom: 0px;
     z-index: 1;
     width: 30vw;
     height: 50vh;
+    padding-left: 20px;
     /* border-bottom:solid 20px #57ac49; */
   }
-  .half-circle-filler{
+  .half-circle-wrapper, .circle-wrapper{
     display: none;
   }
+  .choose-us-border {
+    background-color: #7bc270;
+    height: 5vh;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .right-statement-box{
+    display: inline;
+    position:relative;
+    width:10%;
+  }
+  .left-image-box {
+    margin-top: 10vh;
+    width:80vh;
+    height:45vw;
+  }
+  .farmscape-img{
+    height:100%;
+    width:100%;
 
-
-
-
+  }
+  .top-of-statement-header{
+    height:10vh;
+    white-space:nowrap;
+  }
 }
 
 
