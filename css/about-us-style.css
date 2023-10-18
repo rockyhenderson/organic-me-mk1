@@ -99,6 +99,10 @@ footer {
     display: flex;
     justify-content: space-evenly;
     text-align: left;
+    
+}
+footer p {
+    font-size: 15px;
 }
 
 .footer-section {
