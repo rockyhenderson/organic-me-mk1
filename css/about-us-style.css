@@ -28,16 +28,6 @@ nav {
     text-decoration: underline 2px #d5a038;
     text-underline-offset: 5px;
 }
-
-.fresh-handpicked-text {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 100px;
-}
-
-.healthy-lifestyle-content {
-    height: 20%;
-}
-
 .contact-us-button {
     background-color: #d5a038;
     border: 2px #d5a038 solid;
@@ -76,7 +66,15 @@ nav {
     height:50px;
     width:100px;
 }
-.history-section{
+#history-section{
     height:100vh;
     background-color: red;
+}
+#staff-section{
+    background-color: blue;
+    height:100vh;
+}
+#value-section{
+    background-color: yellow;
+    height:100vh;
 }
