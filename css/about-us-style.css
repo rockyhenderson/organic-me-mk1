@@ -1,0 +1,82 @@
+html{
+    scroll-behavior: smooth
+}
+body {
+    font-family: "ADLaM Display";
+    background-color: linen;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+nav {
+    font-size: 2.5vh;
+    height: 10%;
+    background-color: #57ac49;
+    height: 10vh;
+}
+
+#button-container {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.selected {
+    color: white;
+    text-decoration: underline 2px #d5a038;
+    text-underline-offset: 5px;
+}
+
+.fresh-handpicked-text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 100px;
+}
+
+.healthy-lifestyle-content {
+    height: 20%;
+}
+
+.contact-us-button {
+    background-color: #d5a038;
+    border: 2px #d5a038 solid;
+    border-radius: 10px;
+    font-family: "ADLaM Display";
+    height: 5vh;
+    width: 9vw;
+    text-align: center;
+    color: white;
+}
+
+.contact-us-button:hover {
+    background-color: #be9032;
+    border: 2px #be9032 solid;
+}
+
+.image-body {
+    height: 90vh;
+    background-image: url('../img/bales.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.sub-nav{
+    height:10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.sub-nav-button{
+    height:50px;
+    width:100px;
+}
+.history-section{
+    height:100vh;
+    background-color: red;
+}
