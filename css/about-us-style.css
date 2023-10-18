@@ -48,7 +48,7 @@ nav {
 
 .image-body {
     height: 90vh;
-    background-image: url('../img/bales.jpg');
+    background-image: url('../img/farmland.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
