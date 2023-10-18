@@ -1,7 +1,7 @@
 const productBoxContent = document.getElementById('product-box-content-for-js');
 
 function updateContent() {
-  if (window.innerWidth < 992) {
+  if (window.innerWidth < 800) {
     // Load content from a file called "below992Content.html"
     fetch('product-section-content/Bellow992.html')
       .then(response => response.text())

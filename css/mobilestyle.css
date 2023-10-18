@@ -99,20 +99,27 @@
     padding-left:20px;
   }
 }
-
+@media (max-width: 808px) { 
+  .fresh-handpicked-text{
+    font-size:80px;
+  }
+}
 
 
 @media (max-width: 550px) { 
   .fresh-handpicked-text{
-    font-size:20vw;
+    font-size:70px;
   }
   .healthy-lifestyle-content{
     font-size: 3vw;
   }
+  footer{
+    height:400px;
+  }
 }
 @media (max-width: 400px) { 
   .fresh-handpicked-text{
-    font-size:75px;
+    font-size:60px;
   }
   .healthy-lifestyle-content{
     font-size: 14px;
