@@ -73,8 +73,10 @@ nav {
 #staff-section{
     background-color: blue;
     height:100vh;
+    display: none;
 }
 #value-section{
     background-color: yellow;
     height:100vh;
+    display: none;
 }
