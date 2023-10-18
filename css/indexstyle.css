@@ -4,6 +4,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   height:100%;
+  width: 100%;
+
 }
 .head-content {
   background-color: #57ac49;
@@ -27,8 +29,15 @@ nav {
   text-decoration: underline 2px #d5a038;
   text-underline-offset: 5px;
 }
-button {
-  background-color: transparent;
+.fresh-handpicked-text{
+  font-family: 'Shadows Into Light', cursive; 
+  font-size: 100px;
+}
+.healthy-lifestyle-content{
+  height:20%;
+}
+.contact-us-button {
+  background-color: #d5a038;
   border: 2px #d5a038 solid;
   border-radius: 10px;
   font-family: "ADLaM Display";
@@ -37,11 +46,17 @@ button {
   text-align: center;
   color: white;
 }
+.contact-us-button:hover{
+  background-color: #be9032;
+  border: 2px #be9032  solid;
+}
 .shop-now-button{
   background-color: white;
   color:black;
   border:none;
+  height:40px;
   width:150px;
+  border-radius: 10px;
 }
 .head-row {
     height: 90%;
@@ -72,6 +87,7 @@ button {
   height:30vh;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10vh;
 }
 
 .left-box{
@@ -85,11 +101,9 @@ button {
 
 .image-box {
   height: 50vh;
-
   margin-bottom:10vh;
   border-radius: 40px;
   display: flex;
-  justify-content: space-between;
   padding-left: 0px;
 }
 .right-statement-box {
@@ -111,13 +125,16 @@ button {
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 10px;
-  margin-top: 2vh;
-  padding-bottom: 0px;
-  z-index: 1;
   width: 50vw;
   height: 40vh;
   /* border-bottom:solid 20px #57ac49; */
+}
+.farmscape-img{
+  height:50vh; width:55vw;
+}
+.grey-circle-bh-img{
+  height:70vh; z-index:-1; position: absolute; right:-10vw; top:90vh;
+
 }
 .sticker-wrapper{
   width: 30%;display: flex; flex-direction: column; justify-content: center;
@@ -147,6 +164,10 @@ button {
   justify-content: flex-end;
   margin-bottom: 10vh;
 }
+.top-of-statement-header{
+  display: flex;
+  justify-content: row;
+}
 
 .half-circle-wrapper {
   position: relative;
@@ -162,67 +183,27 @@ button {
   border-bottom-right-radius: 90px;
   border-top-right-radius: 90px;
 }
-
-.product-box {
-  text-align: center;
-  font-size: 25;
-  color: black;
-  margin-top: 5vh;
-  color: white;
-  margin: auto;
-}
-.product-section {
-  display: flex;
-  justify-content: space-around;
-  width: 80vw;
-  height: 60vh;
-  margin: auto;
-  margin-bottom: 30px;
-}
-.main-product {
-  width: 45%;
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  color: black;
-}
-.sub-product {
-  width: 20%;
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-}
-.centered {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.product-honey {
-  margin: 0px;
-}
-.product-head-wrapper {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
 .footer-border{
  background-color: #7bc270;
  height:5vh;
 }
 footer{
   background-color: #57ac49 ;
-  height:35vh;
+  height:300px;
   display: flex;
   justify-content: space-evenly;
   text-align: left;
 }
 .footer-section{
   width:20%;
-  height:34vh;
+  height:300px;
   padding-top:20px;
+  color:black;
 }
 .social-icon{
   height: 25px;
   width:25px;
+}
+.farmscape-img-mobile{
+  display: none;
 }

@@ -1,13 +1,127 @@
-@media only screen and (max-width: 845px) {
-    .statement-box {
-      display: flex;
-      flex-direction: column;
-    }
-    .left-box,
-    .right-box {
-      margin: auto;
-    }
+
+@media (max-width: 992px) { 
+  .head-img-content{
+    display: none;
   }
-@media only screen and (max-width:992px){
+  .head-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .head-text-content{
+    width:90%;
+  }
+  .head-content{
+    margin:0px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin-bottom: 10vh;
+  }
+  .statement-box {
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: inline;
+  }
+  .left-box{
+    padding-left:0;
+    width:100%;
+    text-align: center;
     
+  }
+  .right-box {
+    width:100%;
+    padding-right:0;
+    text-align: center;
+  }
+  .grey-circle-bh-img{
+    display: none;
+  }
+  .image-box{
+    margin-top: 10vh;
+    height:60vh;
+    position: ab;
+  }
+
+  .choose-us-box {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    z-index: 1;
+    width: 20vw;
+    height: 70vh;
+    padding-left: 20px;
+    /* border-bottom:solid 20px #57ac49; */
+  }
+  .half-circle-wrapper, .circle-wrapper{
+    display: none;
+  }
+  .choose-us-border {
+    background-color: #7bc270;
+    height: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .right-statement-box{
+    display: inline;
+    position:relative;
+    width:10%;
+  }
+  .left-image-box {
+    margin-top: 10vh;
+    width:100vw;
+    height:70vh;
+    display: flex;  
+    flex-direction: column;
+  }
+  .farmscape-img, .farmscape-img-mobile{
+    height:33.333333333333333333333333333333333333%;
+    width:100%;
+
+  }
+  .top-of-statement-header{
+    height:10vh;
+    white-space:nowrap;
+  }
+  .sticker-wrapper{
+    width:auto;
+    height:33%;
+  }
+  .farmscape-img-mobile{
+    display: block;
+  }
+  .p-in-choose-us{
+    font-size: small;
+  }
+  .why-choose-use-text{
+    padding-left:20px;
+  }
+}
+@media (max-width: 808px) { 
+  .fresh-handpicked-text{
+    font-size:80px;
+  }
+}
+
+
+@media (max-width: 550px) { 
+  .fresh-handpicked-text{
+    font-size:70px;
+  }
+  .healthy-lifestyle-content{
+    font-size: 3vw;
+  }
+  footer{
+    height:400px;
+  }
+}
+@media (max-width: 400px) { 
+  .fresh-handpicked-text{
+    font-size:60px;
+  }
+  .healthy-lifestyle-content{
+    font-size: 14px;
+  }
 }
