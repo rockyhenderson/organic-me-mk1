@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: "ADLaM Display";
-    background-color: linen;
+    background-color: #faf0e6;
     margin: 0;
     height: 100%;
     width: 100%;
@@ -74,6 +74,13 @@ nav {
 #history-section {
     height: 200vh;
     background-color: red;
+    
+}
+.history-body{
+    width: 50%;
+    height:100%;
+    margin:auto;
+    background-color: rebeccapurple;
 }
 
 #staff-section {
