@@ -8,6 +8,7 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
+    overflow-x:hidden ;
 
 }
 
@@ -71,21 +72,12 @@ nav {
     width: 100px;
 }
 
-#history-section {
-    height: 200vh;
-    background-color: red;
-    
-}
 .history-body{
-    width: 50%;
-    height:100%;
-    margin:auto;
-    background-color: rebeccapurple;
+    width: 500px;
+    margin: auto;
 }
 
-#staff-section {
-    background-color: blue;
-    height: 100vh;
+#staff-section {    
     display: none;
 }
 
@@ -117,4 +109,32 @@ footer p {
     height: 300px;
     padding-top: 20px;
     color: black;
+}
+.staff-section{
+    height:auto;
+}
+.staff-body{
+    max-width:70%;
+    
+    margin: auto;
+}
+.staff-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:auto;
+    margin:auto;
+}
+@media (max-width: 900px) { 
+    .staff-row{
+        flex-direction: column;
+        width:240px;
+    }
+
+}
+.staff-member{
+    height:200px;
+    width:200px;
+    border: 10px black solid;
+    margin:20px;
 }
