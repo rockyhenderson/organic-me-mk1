@@ -113,28 +113,18 @@ footer p {
 .staff-section{
     height:auto;
 }
-.staff-body{
-    max-width:70%;
-    
-    margin: auto;
-}
-.staff-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width:auto;
-    margin:auto;
-}
-@media (max-width: 900px) { 
-    .staff-row{
-        flex-direction: column;
-        width:240px;
-    }
-
-}
 .staff-member{
-    height:200px;
-    width:200px;
-    border: 10px black solid;
-    margin:20px;
+    background-color: #57ac49;
+    width:90%;
+    height: auto;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.staff-member-text, .staff-member-img{
+    width:50%;
+}
+.staff-member-text{
+    padding: 10px;
 }
