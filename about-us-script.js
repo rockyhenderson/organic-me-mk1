@@ -1,32 +1,24 @@
-const HistoryButton = document.getElementById("HistoryButton");
-const HistoryContent = document.getElementById("history-section");
-
-const ValueButton = document.getElementById("ValueButton");
-const ValueContent = document.getElementById("value-section");
-
-const StaffButton = document.getElementById("StaffButton");
-const StaffContent = document.getElementById("staff-section");
+const cardItems = document.querySelectorAll(".card-item");
+const pieItems = document.querySelectorAll(".pie");
+let currentIndex = 0;
 
 
+cardItems[currentIndex].style.display = "block";
+pieItems[currentIndex].classList.add("active-pie");
+
+function displayNextCard() {
+
+  cardItems[currentIndex].style.display = "none";
+  pieItems[currentIndex].classList.remove("active-pie");
 
 
-ValueButton.addEventListener("click", () => {
-    document.getElementById('value-section').style.display = "block"
-    document.getElementById('staff-section').style.display = "none"
-    document.getElementById('history-section').style.display = "none"
-    ValueContent.scrollIntoView({ behavior: "smooth" });
-});
+  currentIndex = (currentIndex + 1) % cardItems.length;
 
-StaffButton.addEventListener("click", () => {
-    document.getElementById('value-section').style.display = "none"
-    document.getElementById('staff-section').style.display = "block"
-    document.getElementById('history-section').style.display = "none"
-    StaffContent.scrollIntoView({ behavior: "smooth" });
-});
 
-HistoryButton.addEventListener("click", () => {
-    document.getElementById('value-section').style.display = "none"
-    document.getElementById('staff-section').style.display = "none"
-    document.getElementById('history-section').style.display = "block"
-    HistoryContent.scrollIntoView({ behavior: "smooth" });
+  cardItems[currentIndex].style.display = "block";
+  pieItems[currentIndex].classList.add("active-pie");
+}
+
+cardItems.forEach((card, index) => {
+  card.addEventListener("click", displayNextCard);
 });

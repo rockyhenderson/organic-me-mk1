@@ -1,130 +1,59 @@
-html {
-    scroll-behavior: smooth
-}
-
 body {
-    font-family: "ADLaM Display";
-    background-color: #faf0e6;
     margin: 0;
     height: 100%;
     width: 100%;
     overflow-x:hidden ;
-
+    font-size: 16px;
 }
-
-nav {
-    font-size: 2.5vh;
-    height: 10%;
-    background-color: #57ac49;
-    height: 10vh;
+header{
+    background-image: url(/img/harvesters.jpg);
+    height:70vh; /*Do NOT TOUCH THIS IT IS THE RIGHT HEIGHT */
 }
-
-#button-container {
-    width: 50%;
-    display: flex;
-    justify-content: end;
+main{
+    margin-top:100px;
 }
-
-.selected {
-    color: white;
-    text-decoration: underline 2px #d5a038;
-    text-underline-offset: 5px;
+.image-wrapper{
+    width: 100vw;
 }
-
-.contact-us-button {
-    background-color: #d5a038;
-    border: 2px #d5a038 solid;
-    border-radius: 10px;
-    font-family: "ADLaM Display";
-    height: 5vh;
-    width: 9vw;
-    text-align: center;
-    color: white;
-}
-
-.contact-us-button:hover {
-    background-color: #be9032;
-    border: 2px #be9032 solid;
-}
-
-.image-body {
-    height: 90vh;
-    background-image: url('../img/farmland.jpg');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.sub-nav {
-    height: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.sub-nav-button {
-    height: 50px;
-    width: 100px;
-}
-
-.history-body{
-    width: 500px;
-    margin: auto;
-}
-
-#staff-section {    
-    display: none;
-}
-
-#value-section {
-    background-color: yellow;
-    height: 100vh;
-    display: none;
-}
-
-.footer-border {
-    background-color: #7bc270;
-    height: 5vh;
-}
-
-footer {
-    background-color: #57ac49;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-    
-}
-footer p {
-    font-size: 15px;
-}
-
-.footer-section {
-    width: 20%;
-    height: 300px;
-    padding-top: 20px;
-    color: black;
-}
-.staff-section{
-    height:auto;
-}
-.staff-member{
-    background-color: #57ac49;
+.story,.mission{
     width:90%;
-    height: auto;
     margin: auto;
-    margin-top:20px;
-    margin-bottom: 20px;
+}
+.main-text-wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
-.staff-member-text, .staff-member-img{
-    width:50%;
+.history{
+    height:500px;
+    width:100%;
+    margin-bottom:40px;
 }
-.staff-member-text{
-    padding: 10px;
+.small-om-history-text{
+    display: block;
+    font-weight: 800;
+    margin-bottom: 39px;
+    margin-top: 40px;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase
+}
+.card-item{
+    border:1px solid #d8d8d8;
+    height:444px;
+    width:440px;
+    margin:auto;
+}
+.pie-container{
+    width:440px;
+    margin: auto;
+}
+pie {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.active-pie{
+    background-color: purple;
 }
