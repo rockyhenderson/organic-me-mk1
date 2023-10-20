@@ -57,3 +57,19 @@ pie {
 .active-pie{
     background-color: purple;
 }
+.staff-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+}
+.staff-member{
+    border:5px black solid;
+    max-width:700px;
+    display: flex;
+    justify-content: space-between;
+}
+.staff-text{
+    width:70%;
+}
