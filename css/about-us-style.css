@@ -23,7 +23,7 @@ main{
 .long-image-wrapper{
     height:400px;
 }
-.mission{
+.mission, .story{
     width:90%;
     margin: auto;
 }
@@ -39,6 +39,7 @@ main{
     margin: auto;
     margin-top:100px ;
     max-width:1400px;
+
 }
 .history{
     height:500px;
@@ -106,10 +107,13 @@ pie {
     .main-text-wrapper{
         flex-direction: row;
     }
-    .mission{
+    .mission,.story{
         width:40%;
+        margin: auto;
     }
     .temp-img{
         display: block;
     } 
+
+    
 }
