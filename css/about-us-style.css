@@ -18,28 +18,23 @@ main{
     margin: auto;
 }
 .image-wrapper{
-    max-width: 700px;
+    max-width: 550px;
+    height:auto;
 }
 .long-image-wrapper{
     height:400px;
 }
 .mission, .story{
     width:90%;
-    margin: auto;
+
 }
-.main-text-wrapper{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top:40px ;
-}
-.main-text-row{
+
+.main-text-row, .main-text-row-bottom{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     margin-top:100px ;
     max-width:1400px;
-
 }
 .history{
     height:500px;
@@ -97,6 +92,13 @@ pie {
 .temp-img{
     display: none;
 }
+.second-image-wrapper{
+    max-width: 550px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
@@ -104,12 +106,17 @@ pie {
     header{
         height:70vh;
     }
-    .main-text-wrapper{
+    .main-text-row{
         flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-text-row-bottom{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
     .mission,.story{
         width:40%;
-        margin: auto;
+
     }
     .temp-img{
         display: block;
