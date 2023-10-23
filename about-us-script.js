@@ -1,34 +1,45 @@
 const cardItems = document.querySelectorAll(".card-item");
 const pieItems = document.querySelectorAll(".pie");
-const histLine = document.querySelectorAll("#history-line")
+const historyLines = document.querySelectorAll(".history-line");
 let currentIndex = 0;
 
 cardItems[currentIndex].style.display = "block";
 pieItems[currentIndex].classList.add("active-pie");
+updateHistoryElements(currentIndex);
 
 function displayNextCard(index) {
   cardItems[currentIndex].style.display = "none";
   pieItems[currentIndex].classList.remove("active-pie");
-  //do not put anything in this gap for some reason when i do all of my content disapers
+  updateHistoryElements(currentIndex, index);
+
   currentIndex = index % cardItems.length;
   cardItems[currentIndex].style.display = "block";
   pieItems[currentIndex].classList.add("active-pie");
+  updateHistoryElements(currentIndex, index);
+}
 
- 
-  for (let i = 0; i <= index; i++) {
-    pieItems[i].classList.add("active-pie");
+function updateHistoryElements(prevIndex, newIndex) {
+  for (let i = 0; i < historyLines.length; i++) {
+    if (i <= prevIndex && i <= newIndex) {
+      historyLines[i].classList.add("active-line");
+    } else {
+      historyLines[i].classList.remove("active-line");
+    }
+  }
+  
+  for (let i = 0; i < pieItems.length; i++) {
+    if (i <= prevIndex && i <= newIndex) {
+      pieItems[i].classList.add("active-pie");
+    } else {
+      pieItems[i].classList.remove("active-pie");
+    }
   }
 }
 
-function displayNextCardOnClick(index) {
-  displayNextCard(index);
-  console.log(`Clicked pie number ${index}`);
-}
-
 cardItems.forEach((card, index) => {
-  card.addEventListener("click", () => displayNextCardOnClick(index));
+  card.addEventListener("click", () => displayNextCard(index));
 });
 
 pieItems.forEach((pie, index) => {
-  pie.addEventListener("click", () => displayNextCardOnClick(index));
+  pie.addEventListener("click", () => displayNextCard(index));
 });
