@@ -43,3 +43,4 @@ cardItems.forEach((card, index) => {
 pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
 });
+
