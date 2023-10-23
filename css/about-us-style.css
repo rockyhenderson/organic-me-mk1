@@ -95,8 +95,20 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.staff-member{
-    background-color: red;
+.staff-member h1{
+    font-size: 25px;
+    font-weight: 800;
+}
+.staff-member p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.mugshot-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.staff-member-filler-text{
+    text-align: center;
 }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
@@ -152,7 +164,6 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: red;
         margin-bottom:120px;
     }
     .staff-container{
@@ -180,6 +191,7 @@ main{
     .mugshot{
         height:300px;
         width:300px;
+        border-radius: 50%;
     }
     
 }
@@ -197,5 +209,22 @@ main{
 @media (max-width: 781px) {
     .staff-member{
         width: 100%;
+        margin-bottom:20px;
+        display: flex;
+    }
+    .mugshot-wrapper{
+        display: flex;
+        justify-content: start;
+        padding-left:40px;
+        width:30%;
+        height:100%;
+    }
+    .staff-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .staff-member-filler-text{
+        text-align: end;
     }
 }
