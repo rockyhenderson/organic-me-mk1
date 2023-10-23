@@ -69,6 +69,7 @@ main{
 .pie-container{
     width:440px;
     margin: auto;
+    margin-top:20px;
 }
 .pie {
     height: 10px;
@@ -80,21 +81,7 @@ main{
 .active-pie{
     background-color: #be9032;
 }
-.staff-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 400px;
-    margin: auto;
-}
-.staff-member{
-    max-width:700px;
-    display: flex;
-    justify-content: space-between;
-}
-.staff-text{
-    width:70%;
-}
+
 .inner-card{
     padding:20px;
 }
@@ -107,6 +94,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.staff-member{
+    background-color: red;
 }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
@@ -137,42 +127,75 @@ main{
         width:640px;
     }
     .pie-container{
-        width:640px;
+        width:750px;
         display: flex;
         justify-content: space-between;
     }
     .pie{
         position: relative;
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
     }
     .history-line{
-        width:80px;
-        height:7px;
+        width:90px;
+        height:5px;
         position: absolute; 
         background-color: inherit;
         z-index: -1;
         right: 5px;;
-        top:7px
+        top:5px;
     }
     .staff-member{
-        width:400px;
-        display: flex;
-        justify-content: space-between;
+        width:25%;  
         padding-top:10px;
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: red;
+        margin-bottom:120px;
     }
     .staff-container{
         display: flex;
         flex-direction: row;
-        width: 1200px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        width:95vw;
         margin: auto;
     }
     .second-image-wrapper{
         margin-top:200px;
     }
     .active-line {
-        /* Your styling for active history lines */
         background-color: #be9032;
       }
+    .history{
+        height:100vh;
+        display: inline;
+    }
+    .staff{
+        margin-top:100px;
+    }
+    .mugshot{
+        height:300px;
+        width:300px;
+    }
     
+}
+@media (max-width: 1200px) {
+    .mugshot{
+        height:110px;
+        width:110px;
+    }
+}
+@media (max-width: 870px) {
+    .staff-member{
+        width:44%;  
+    }
+}
+@media (max-width: 781px) {
+    .staff-member{
+        width: 100%;
+    }
 }
