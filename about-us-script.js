@@ -4,7 +4,7 @@ const historyLines = document.querySelectorAll(".history-line");
 let currentIndex = 0;
 
 cardItems[currentIndex].style.display = "block";
-pieItems[currentIndex].classList.add("active-pie");
+
 updateHistoryElements(currentIndex);
 
 function displayNextCard(index) {
@@ -12,11 +12,22 @@ function displayNextCard(index) {
   pieItems[currentIndex].classList.remove("active-pie");
   updateHistoryElements(currentIndex, index);
 
-  currentIndex = index % cardItems.length;
+  currentIndex = index;
+  currentIndex = index % cardItems.length; //its not updating the index
+  console.log(`displayNextCard called with index: ${index}`);
   cardItems[currentIndex].style.display = "block";
   pieItems[currentIndex].classList.add("active-pie");
   updateHistoryElements(currentIndex, index);
 }
+
+  
+
+  
+
+
+  
+  
+  
 
 function updateHistoryElements(prevIndex, newIndex) {
   for (let i = 0; i < historyLines.length; i++) {
@@ -43,3 +54,12 @@ cardItems.forEach((card, index) => {
 pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
 });
+
+
+cardItems.forEach((card, index) => {
+  card.addEventListener("click", () => {
+    console.log(`Card clicked: ${index}`);
+    displayNextCard(index);
+  });
+});
+

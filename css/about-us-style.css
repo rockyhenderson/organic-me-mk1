@@ -78,7 +78,7 @@ main{
     display: inline-block;
 }
 .active-pie{
-    background-color: purple;
+    background-color: #be9032;
 }
 .staff-container{
     display: flex;
@@ -172,7 +172,7 @@ main{
     }
     .active-line {
         /* Your styling for active history lines */
-        background-color: purple;
+        background-color: #be9032;
       }
     
 }
