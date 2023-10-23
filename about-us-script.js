@@ -5,29 +5,18 @@ let currentIndex = 0;
 
 cardItems[currentIndex].style.display = "block";
 
-updateHistoryElements(currentIndex);
-
 function displayNextCard(index) {
+  console.log(`INDEX BEFORE UPDATE: ${currentIndex}`);
   cardItems[currentIndex].style.display = "none";
   pieItems[currentIndex].classList.remove("active-pie");
   updateHistoryElements(currentIndex, index);
 
-  currentIndex = index;
-  currentIndex = index % cardItems.length; //its not updating the index
-  console.log(`displayNextCard called with index: ${index}`);
+  currentIndex = (index + 1) % cardItems.length; // Update currentIndex correctly
+  console.log(`INDEX AFTER UPDATE: ${currentIndex}`);
   cardItems[currentIndex].style.display = "block";
   pieItems[currentIndex].classList.add("active-pie");
-  updateHistoryElements(currentIndex, index);
+  updateHistoryElements((currentIndex - 1 + cardItems.length) % cardItems.length, currentIndex);
 }
-
-  
-
-  
-
-
-  
-  
-  
 
 function updateHistoryElements(prevIndex, newIndex) {
   for (let i = 0; i < historyLines.length; i++) {
@@ -37,7 +26,7 @@ function updateHistoryElements(prevIndex, newIndex) {
       historyLines[i].classList.remove("active-line");
     }
   }
-  
+
   for (let i = 0; i < pieItems.length; i++) {
     if (i <= prevIndex && i <= newIndex) {
       pieItems[i].classList.add("active-pie");
@@ -54,12 +43,3 @@ cardItems.forEach((card, index) => {
 pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
 });
-
-
-cardItems.forEach((card, index) => {
-  card.addEventListener("click", () => {
-    console.log(`Card clicked: ${index}`);
-    displayNextCard(index);
-  });
-});
-
