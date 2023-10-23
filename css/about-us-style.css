@@ -96,7 +96,8 @@ main{
     justify-content: center;
 }
 .staff-member h1{
-    font-size: 25px;
+    margin:20px;
+    font-size: 18px;
     font-weight: 800;
 }
 .staff-member p{
@@ -109,6 +110,12 @@ main{
 }
 .staff-member-filler-text{
     text-align: center;
+}
+img{
+    transition: box-shadow 0.3s ease-in-out;
+}
+img:hover{
+  box-shadow: 1px 1px 1px grey;
 }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
@@ -166,6 +173,9 @@ main{
         justify-content: center;
         margin-bottom:120px;
     }
+    .staff-member:hover{
+        color:blue
+    }
     .staff-container{
         display: flex;
         flex-direction: row;
@@ -199,6 +209,7 @@ main{
     .mugshot{
         height:110px;
         width:110px;
+        border-radius: 50%;
     }
 }
 @media (max-width: 870px) {
@@ -218,6 +229,7 @@ main{
         padding-left:40px;
         width:30%;
         height:100%;
+        border-radius: 50%;
     }
     .staff-text{
         display: flex;
