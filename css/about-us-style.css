@@ -82,13 +82,12 @@ main{
 }
 .staff-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 400px;
     margin: auto;
 }
 .staff-member{
-    border:5px black solid;
     max-width:700px;
     display: flex;
     justify-content: space-between;
@@ -158,6 +157,18 @@ main{
         z-index: -1;
         left:5px;
         top:7px
+    }
+    .staff-member{
+        width:400px;
+        display: flex;
+        justify-content: space-between;
+        padding-top:10px;
+    }
+    .staff-container{
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        margin: auto;
     }
     
     
