@@ -70,7 +70,7 @@ main{
     width:440px;
     margin: auto;
 }
-pie {
+.pie {
     height: 10px;
     width: 10px;
     background-color: #bbb;
@@ -109,6 +109,9 @@ pie {
     flex-direction: column;
     justify-content: center;
 }
+.history-line{
+    display: none;
+}
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
@@ -132,6 +135,30 @@ pie {
     .temp-img{
         display: block;
     } 
-
+    .card-item{
+        border: none;
+        height:300px;
+        width:640px;
+    }
+    .pie-container{
+        width:640px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pie{
+        position: relative;
+        height: 20px;
+        width: 20px;
+    }
+    #history-line{
+        width:80px;
+        height:7px;
+        position: absolute; 
+        background-color: inherit;
+        z-index: -1;
+        left:5px;
+        top:7px
+    }
+    
     
 }
