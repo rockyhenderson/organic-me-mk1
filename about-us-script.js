@@ -44,3 +44,32 @@ pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
 });
 
+
+
+
+
+
+
+
+
+
+
+function SarahInfo(){
+  alert("hi")
+  document.getElementById("SarahText").style.display = "block";
+}
+
+const showModalButton = document.getElementById('sarah-showModalButton');
+const closeModalButton = document.getElementById('closeModalButton');
+const modal = document.getElementById('sarah-modal');
+const overlay = document.getElementById('overlay');
+showModalButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+    overlay.style.display = 'block';
+});
+
+closeModalButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+});
+
