@@ -138,7 +138,7 @@ micloseModalButton.addEventListener('click', () => {
 
 
 
-const modals = ['johnModal', 'miModal', 'markModal', 'olivModal', 'sarahModal', 'michModal'];
+const modals = [johnModal, miModal, markModal, olivModal, sarahModal, michModal];
 let modalIndex = 0; 
 
 
@@ -152,11 +152,9 @@ function showCurrentModal() {
       if (index === modalIndex) {
           console.log(`Value being plugged into the SHOW function is ${modal}`);
           $(modal).show();
-          // modal.style.display = 'block'
       } else {
           console.log(`Value being plugged into the HIDE function is ${modal}`);
           $(modal).hide();
-          // modal.style.display = 'none'
       }
   });
 }
@@ -164,11 +162,6 @@ function showCurrentModal() {
 document.getElementById('left-button').addEventListener('click', () => {
     // previous
     modalIndex = (modalIndex - 1 + modals.length) % modals.length;
-    // sarahModal.style.display = 'none'
-    // johnModal.style.display = 'block'
-
-    // $(sarahModal).hide()
-    // $(johnModal).show()
     showCurrentModal();
 });
 
