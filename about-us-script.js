@@ -156,7 +156,7 @@ function showCurrentModal() {
       } else {
           console.log(`Value being plugged into the HIDE function is ${modal}`);
           $(modal).hide();
-          //modal.style.display = 'none'
+          // modal.style.display = 'none'
       }
   });
 }
