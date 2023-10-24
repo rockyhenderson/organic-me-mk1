@@ -115,7 +115,7 @@ img{
     transition: box-shadow 0.3s ease-in-out;
 }
 img:hover{
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 3px 3px 3px grey;
 }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
@@ -253,7 +253,7 @@ img:hover{
 }
 
 /* TEMP CSS */
-.sarah-modal {
+.sarah-modal, .mich-modal, .oliv-modal, .mark-modal, .john-modal, .mi-modal {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -264,7 +264,7 @@ img:hover{
     display: none;
 }
 
-.sarah-modal-content {
+.sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
     text-align: center;
     padding: 20px;
 }

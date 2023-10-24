@@ -3,6 +3,33 @@ const pieItems = document.querySelectorAll(".pie");
 const historyLines = document.querySelectorAll(".history-line");
 let currentIndex = 0;
 
+const overlay = document.getElementById('overlay');
+const miShowModalButton = document.getElementById('mi-showModalButton');
+const miModal = document.getElementById('mi-modal');
+const micloseModalButton = document.getElementById('micloseModalButton');
+const sarahShowModalButton = document.getElementById('sarah-showModalButton');
+const sarahcloseModalButton = document.getElementById('sarahcloseModalButton');
+const sarahModal = document.getElementById('sarah-modal');
+const michShowModalButton = document.getElementById('mich-showModalButton');
+const michModal = document.getElementById('mich-modal');
+const michcloseModalButton = document.getElementById('michcloseModalButton');
+const olivShowModalButton = document.getElementById('oliv-showModalButton');
+const olivModal = document.getElementById('oliv-modal');
+const olivcloseModalButton = document.getElementById('olivcloseModalButton');
+const markShowModalButton = document.getElementById('mark-showModalButton');
+const markModal = document.getElementById('mark-modal');
+const markcloseModalButton = document.getElementById('markcloseModalButton');
+const johnShowModalButton = document.getElementById('john-showModalButton');
+const johnModal = document.getElementById('john-modal');
+const johncloseModalButton = document.getElementById('johncloseModalButton');
+
+
+
+
+
+
+
+// History Bar JS
 cardItems[currentIndex].style.display = "block";
 
 function displayNextCard(index) {
@@ -43,33 +70,65 @@ cardItems.forEach((card, index) => {
 pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
 });
+//Hisotry bar end here
 
 
 
 
 
-
-
-
-
-
-
-function SarahInfo(){
-  alert("hi")
-  document.getElementById("SarahText").style.display = "block";
-}
-
-const showModalButton = document.getElementById('sarah-showModalButton');
-const closeModalButton = document.getElementById('closeModalButton');
-const modal = document.getElementById('sarah-modal');
-const overlay = document.getElementById('overlay');
-showModalButton.addEventListener('click', () => {
-    modal.style.display = 'block';
+//modal button js
+sarahShowModalButton.addEventListener('click', () => {
+    sarahModal.style.display = 'block';
     overlay.style.display = 'block';
 });
 
-closeModalButton.addEventListener('click', () => {
-    modal.style.display = 'none';
+sarahcloseModalButton.addEventListener('click', () => {
+    sarahModal.style.display = 'none';
     overlay.style.display = 'none';
 });
 
+michShowModalButton.addEventListener('click', () => {
+  michModal.style.display = 'block';
+  overlay.style.display = 'block';
+});
+michcloseModalButton.addEventListener('click', () => {
+  michModal.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+olivShowModalButton.addEventListener('click', () => {
+  olivModal.style.display = 'block';
+  overlay.style.display = 'block';
+});
+olivcloseModalButton.addEventListener('click', () => {
+  olivModal.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+markShowModalButton.addEventListener('click', () => {
+  markModal.style.display = 'block';
+  overlay.style.display = 'block';
+});
+markcloseModalButton.addEventListener('click', () => {
+  markModal.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+johnShowModalButton.addEventListener('click', () => {
+  johnModal.style.display = 'block';
+  overlay.style.display = 'block';
+});
+johncloseModalButton.addEventListener('click', () => {
+  johnModal.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+miShowModalButton.addEventListener('click', () => {
+  miModal.style.display = 'block';
+  overlay.style.display = 'block';
+});
+micloseModalButton.addEventListener('click', () => {
+  miModal.style.display = 'none';
+  overlay.style.display = 'none';
+});
+//modal button ends here
