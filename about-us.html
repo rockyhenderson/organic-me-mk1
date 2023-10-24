@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us Page</title>
     <link rel="stylesheet" href="css/about-us-style.css" />
-    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  
+  <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -29,18 +33,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link" href="about-us.html" style="text-decoration:underline #d5a038 4px; text-underline-offset: 5px;">About</a>
-              <a class="nav-link" href="#">Contact</a>
-              <a class="nav-link" href="#">Location</a>
-              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="index.html" style="color:black;">Home</a>
+              <a class="nav-link" href="about-us.html" style="color:black; text-decoration:underline #d5a038 3px; text-underline-offset: 5px;">About</a>
+              <a class="nav-link" href="#" style="color:black;">Contact</a>
+              <a class="nav-link" href="#" style="color:black;">Location</a>
+              <a class="nav-link" href="#" style="color:black;">Products</a>
             </div>
           </div>
         </div>
       </nav>
 
 
-      <h1 style="text-align: center;margin-top:10vh;";>Making Organic Food easy </h1>
+      <h1 style="font-size: 50px; text-align: center;margin-top:10vh; ";>Making Organic Food easy </h1>
     </header>
     <main>
       <div class="main-text-row">
@@ -107,8 +111,8 @@
           </p>
           
       </div>
-      <div class="second-image-wrapper">
-        <img src="img/about-us/standingfarmer.png" alt="" style="width:100%" />
+      <div class="image-wrapper" style="margin-top:200px;">
+        <img src="img/about-us/farmpan.png" alt="" style="width:100%" />
       </div>
       </div>
     </main>
@@ -201,8 +205,17 @@
 
     <div id="sarah-modal" class="sarah-modal">
       <div class="sarah-modal-content">
-        <h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
-        <button id="sarahcloseModalButton">Close</button>
+        <button class="left-scroll-arrow" id="left-button">L</button>
+        <button class="right-scroll-arrow"id="right-button">R</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/Sarah.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+          <a id="sarahcloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>Sarah Mitch</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>Meet Sarah Mitch, the nurturing spirit behind our thriving organic farm. With a deep-rooted passion for sustainable agriculture, Sarah has cultivated an environment that is not only bountiful but also ecologically responsible. Her role as the Organic Farm Manager involves overseeing the day-to-day operations, ensuring that our crops flourish in harmony with nature. Sarah's dedication to quality and sustainability has made our farm a shining example of responsible agriculture, and her expertise is the reason our produce is so fresh and wholesome. She is the driving force that keeps us rooted in our commitment to providing the finest organic products to our customers.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>
@@ -210,40 +223,75 @@
 
     <div id="mich-modal" class="mich-modal">
       <div class="mich-modal-content">
-        <h1>BBBBBBBBBBBBBBBBBBBBB</h1>
-        <button id="michcloseModalButton">Close</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/David.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+          <a id="michcloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>Michael Turner</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>Innovation and vision are the hallmark of Michael Turner, our Head of Product Development. With his creative prowess and keen insight into market trends, Michael leads our product development team to new heights. He possesses a remarkable ability to translate ideas into tangible products that captivate our customers. Michael's role involves identifying emerging opportunities and trends in the industry, guiding the team through the development process, and ensuring our products are not just cutting-edge but also aligned with our values. Thanks to his leadership, our product lineup continues to evolve, offering our customers exciting and sustainable choices that enhance their lives.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>
 
     <div id="oliv-modal" class="oliv-modal">
       <div class="oliv-modal-content">
-        <h1>CCCCCCCCCCCCC</h1>
-        <button id="olivcloseModalButton">Close</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/Emily.jpg" alt="a face" style="height:300px; width:300px; border-radius: 50%;">
+          <a id="olivcloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>Olivia Davis</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>Olivia Davis is the driving force behind our brand's visibility and appeal. As our Marketing Coordinator, she crafts compelling narratives that engage our audience and strengthens our market presence. Olivia's creativity knows no bounds, and her innovative marketing campaigns have boosted our brand recognition. She's not only a master of digital and traditional marketing, but she's also deeply committed to our mission of sustainability, infusing it into every aspect of our marketing efforts. Olivia's work ensures that our message reaches those who value eco-conscious products and that our brand remains synonymous with quality and responsibility.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>
 
     <div id="mark-modal" class="mark-modal">
       <div class="mark-modal-content">
-        <h1>DDDDDDDDDDDDDDDDDD</h1>
-        <button id="markcloseModalButton">Close</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/Mark.jpg" alt="a face" style="height:300px; width:300px; border-radius: 50%;">
+          <a id="markcloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>Mark Johnson</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>For Mark Johnson, precision and quality control are more than just a job; they're a way of life. As our Quality Control Specialist, Mark plays a crucial role in upholding our high standards for excellence. With a meticulous eye for detail, he meticulously inspects every product that leaves our facilities, ensuring that only the finest items reach our customers. Mark's commitment to quality is unwavering, and his dedication to maintaining the integrity of our products is a testament to our unwavering commitment to providing top-notch goods. When you receive a product from us, you can rest assured that it has met Mark's rigorous quality control standards.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>
 
     <div id="john-modal" class="john-modal">
       <div class="john-modal-content">
-        <h1>EEEEEEEEEEEEEEEEEEEEE</h1>
-        <button id="johncloseModalButton">Close</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/John.jpg" alt="a face" style="height:300px; width:300px; border-radius: 50%;">
+          <a id="johncloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>John Patel</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>John Patel is our Sustainability Officer, and his role is at the core of our company's values. He's the guardian of our commitment to environmental responsibility and social impact. John ensures that our operations adhere to the highest sustainability standards, minimizing our carbon footprint and supporting eco-friendly initiatives. Beyond his duties, John also spearheads our efforts to give back to the community, making a positive difference in the lives of those we serve. His dedication to sustainability is a driving force behind our company's mission to make the world a greener, better place.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>
 
     <div id="mi-modal" class="mi-modal">
       <div class="mi-modal-content">
-        <h1>FFFFFFFFFFFFFFFFF</h1>
-        <button id="micloseModalButton">Close</button>
+        <div class="staff-text-inner-content-head">
+          <img src="img/headshots/Sarah2.jpg" alt="a face" style="height:300px; width:300px; border-radius: 50%;">
+          <a id="micloseModalButton" class="close-modal-button close"></a>
+        </div>
+        <div class="staff-text-inner-content-body">
+          <h1>Mi Patel</h1>
+          <p>Organic Farm Manager <br><br></p>
+          <p>Mi Patel shares the role of Sustainability Officer with a dedication that mirrors John's passion for sustainability. With a joint focus on minimizing environmental impact and fostering community well-being, Mi ensures that our commitment to sustainability is integrated into every facet of our organization. From managing eco-friendly projects to promoting sustainable practices internally, Mi's work plays a pivotal role in our green journey. Their combined efforts with John solidify our company's dedication to making environmentally conscious choices and leaving a positive mark on the world.</p>
+        </div>
       </div>
     </div>
     <div id="overlay" class="overlay"></div>

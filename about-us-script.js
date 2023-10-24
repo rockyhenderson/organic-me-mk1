@@ -28,7 +28,6 @@ const johncloseModalButton = document.getElementById('johncloseModalButton');
 
 
 
-
 // History Bar JS
 cardItems[currentIndex].style.display = "block";
 
@@ -132,3 +131,49 @@ micloseModalButton.addEventListener('click', () => {
   overlay.style.display = 'none';
 });
 //modal button ends here
+
+//put modal into an array and then scroll thru them with index.
+
+
+
+
+
+const modals = ['johnModal', 'miModal', 'markModal', 'olivModal', 'sarahModal', 'michModal'];
+let modalIndex = 0; 
+
+
+
+
+
+// show and hide modals
+//kill me
+function showCurrentModal() {
+  $(modals).each(function (index, modal) {
+      if (index === modalIndex) {
+          console.log(`Value being plugged into the SHOW function is ${modal}`);
+          $(modal).show();
+          // modal.style.display = 'block'
+      } else {
+          console.log(`Value being plugged into the HIDE function is ${modal}`);
+          $(modal).hide();
+          //modal.style.display = 'none'
+      }
+  });
+}
+
+document.getElementById('left-button').addEventListener('click', () => {
+    // previous
+    modalIndex = (modalIndex - 1 + modals.length) % modals.length;
+    // sarahModal.style.display = 'none'
+    // johnModal.style.display = 'block'
+
+    // $(sarahModal).hide()
+    // $(johnModal).show()
+    showCurrentModal();
+});
+
+document.getElementById('right-button').addEventListener('click', () => {
+    // next
+    modalIndex = (modalIndex + 1) % modals.length;
+    showCurrentModal();
+});

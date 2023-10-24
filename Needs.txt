@@ -1,6 +1,7 @@
-Need to udpate all font with vw instead of px to scale with page
-need to add breakpoints for EVERYTHING
-breakpoints for product section should be honey on top and meat and veg on bottom
+
+
+history line dosent work properly click to find out
+
 
 https://www.riskified.com/about/
 steal nav bar?

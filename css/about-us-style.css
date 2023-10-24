@@ -4,7 +4,7 @@ body {
     width: 100%;
     overflow-x:hidden ;
     font-size: 16px;
-    font-family: "ADLaM Display";
+    font-family: 'Noto Sans', sans-serif;
 
 }
 header{
@@ -13,12 +13,15 @@ header{
     background-position: center;
     background-size: cover;
     height:50vh; /*Do NOT TOUCH THIS IT IS THE RIGHT HEIGHT */
-    font-family: "ADLaM Display";
+    font-family: 'Noto Sans', sans-serif;
+}
+nav{
+    font-weight: 500;
 }
 main{
     width:90vw;
     margin: auto;
-    font-family: "ADLaM Display";
+    font-family: 'Noto Sans', sans-serif;
 }
 .image-wrapper{
     max-width: 550px;
@@ -29,6 +32,7 @@ main{
 }
 .mission, .story{
     width:90%;
+    font-family: 'Noto Sans', sans-serif;
 
 }
 
@@ -49,7 +53,7 @@ main{
     height:500px;
     width:100%;
     margin-bottom:40px;
-    font-family: "ADLaM Display";
+    font-family: 'Noto Sans', sans-serif;
 }
 .small-om-history-text{
     display: block;
@@ -99,10 +103,12 @@ main{
     margin:20px;
     font-size: 18px;
     font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
 }
 .staff-member p{
     font-size: 14px;
     font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
 }
 .mugshot-wrapper{
     display: flex;
@@ -260,13 +266,15 @@ img:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: red   ;
+    background-color: white   ;
     display: none;
 }
 
 .sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
-    text-align: center;
-    padding: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .overlay {
@@ -276,7 +284,58 @@ img:hover{
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: red;
     display: none;
 }
+.staff-text-inner-content-head{
+    height:50%;
+    display: flex;
+    justify-content: space-between;
+}
+.staff-text-inner-content-body{
+    height:50%;
+    margin-top:40px;
+}
+.staff-text-inner-content-body h1{
+    font-size: 20px;
+}
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+  }
+.close:after {
+    transform: rotate(-45deg);
+}
+.left-scroll-arrow{
+    z-index: 2;
+    position: absolute;
+    left:0;
+    height:40px;
+    width:30px;
+}
+.right-scroll-arrow{
+    z-index: 2;
+    position: absolute;
+    right:0;
+    height:40px;
+    width:30px;
+}
+  
 /* TEMP CSS */
