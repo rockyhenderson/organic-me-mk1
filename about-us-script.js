@@ -22,8 +22,8 @@ const markcloseModalButton = document.getElementById('markcloseModalButton');
 const johnShowModalButton = document.getElementById('john-showModalButton');
 const johnModal = document.getElementById('john-modal');
 const johncloseModalButton = document.getElementById('johncloseModalButton');
-
-
+const rightButtons = document.querySelectorAll('.right-scroll-arrow');
+const leftButtons = document.querySelectorAll('.left-scroll-arrow');
 
 
 
@@ -138,7 +138,7 @@ micloseModalButton.addEventListener('click', () => {
 
 
 
-const modals = [johnModal, miModal, markModal, olivModal, sarahModal, michModal];
+const modals = [sarahModal,michModal, olivModal, markModal, johnModal, miModal];
 let modalIndex = 0; 
 
 
@@ -158,15 +158,20 @@ function showCurrentModal() {
       }
   });
 }
+leftButtons.forEach(function(button){
+  button.addEventListener('click', leftButtonClickHandler);
+})
+function leftButtonClickHandler(event) {
+  // next
+  modalIndex = (modalIndex +5 ) % modals.length;
+  showCurrentModal();
+}
 
-document.getElementById('left-button').addEventListener('click', () => {
-    // previous
-    modalIndex = (modalIndex - 1 + modals.length) % modals.length;
-    showCurrentModal();
-});
-
-document.getElementById('right-button').addEventListener('click', () => {
-    // next
-    modalIndex = (modalIndex + 1) % modals.length;
-    showCurrentModal();
-});
+rightButtons.forEach(function(button){
+  button.addEventListener('click', rightButtonClickHandler);
+})
+function rightButtonClickHandler(event) {
+  // next
+  modalIndex = (modalIndex + 1) % modals.length;
+  showCurrentModal();
+}
