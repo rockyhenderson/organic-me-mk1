@@ -85,7 +85,9 @@ main{
 .active-pie{
     background-color: #be9032;
 }
-
+.filler-pie{
+    display: none;
+}
 .inner-card{
     padding:20px;
 }
@@ -160,6 +162,13 @@ img{
         position: relative;
         height: 15px;
         width: 15px;
+    }
+    .filler-pie{
+        display: block;
+        height:15px ;
+        width:15px;
+        background-color: #be9032;
+         border-radius:50%;
     }
     .history-line{
         width:90px;
