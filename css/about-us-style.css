@@ -85,7 +85,7 @@ main{
 .active-pie{
     background-color: #be9032;
 }
-.filler-pie{
+#filler-pie{
     display: none;
 }
 .inner-card{
@@ -163,7 +163,7 @@ img{
         height: 15px;
         width: 15px;
     }
-    .filler-pie{
+    #filler-pie{
         display: block;
         height:15px ;
         width:15px;

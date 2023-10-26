@@ -24,6 +24,10 @@ const johnModal = document.getElementById('john-modal');
 const johncloseModalButton = document.getElementById('johncloseModalButton');
 const rightButtons = document.querySelectorAll('.right-scroll-arrow');
 const leftButtons = document.querySelectorAll('.left-scroll-arrow');
+const fillerPie = document.getElementById("filler-pie");
+const pieZero = document.querySelector(".pie-zero");
+const lineZero = document.querySelector(".line-zero");
+const firstSlide = document.querySelector(".card-1");
 
 
 
@@ -32,6 +36,7 @@ const leftButtons = document.querySelectorAll('.left-scroll-arrow');
 cardItems[currentIndex].style.display = "block";
 
 function displayNextCard(index) {
+  document.querySelector(".card-1").style.display = "none";
   console.log(`INDEX BEFORE UPDATE: ${currentIndex}`);
   cardItems[currentIndex].style.display = "none";
   pieItems[currentIndex].classList.remove("active-pie");
@@ -68,6 +73,36 @@ cardItems.forEach((card, index) => {
 
 pieItems.forEach((pie, index) => {
   pie.addEventListener("click", () => displayNextCard(index));
+});
+fillerPie.addEventListener("click", function () {
+
+  document.querySelector(".pie-zero").classList.remove("active-pie");
+  document.querySelector(".line-zero").classList.remove("active-line");
+  document.querySelector(".pie-1").classList.remove("active-pie");
+  document.querySelector(".pie-2").classList.remove("active-pie");
+  document.querySelector(".pie-3").classList.remove("active-pie");
+  document.querySelector(".pie-4").classList.remove("active-pie");
+  document.querySelector(".pie-5").classList.remove("active-pie");
+  document.querySelector(".pie-6").classList.remove("active-pie");
+  document.querySelector(".pie-7").classList.remove("active-pie");
+  document.querySelector(".pie-8").classList.remove("active-pie");
+  document.querySelector(".line-1").classList.remove("active-line");
+  document.querySelector(".line-2").classList.remove("active-line");
+  document.querySelector(".line-3").classList.remove("active-line");
+  document.querySelector(".line-4").classList.remove("active-line");
+  document.querySelector(".line-5").classList.remove("active-line");
+  document.querySelector(".line-6").classList.remove("active-line");
+  document.querySelector(".line-7").classList.remove("active-line");
+  document.querySelector(".line-8").classList.remove("active-line");
+  document.querySelector(".card-1").style.display = "block";
+  document.querySelector(".card-2").style.display = "none";
+  document.querySelector(".card-3").style.display = "none";
+  document.querySelector(".card-4").style.display = "none";
+  document.querySelector(".card-5").style.display = "none";
+  document.querySelector(".card-6").style.display = "none";
+  document.querySelector(".card-7").style.display = "none";
+  document.querySelector(".card-8").style.display = "none";
+  document.querySelector(".card-9").style.display = "none";
 });
 //Hisotry bar end here
 
