@@ -2,7 +2,7 @@
 
 
 COOKIE BOX
-RESIZIING PAGE WHEN ION MODEL
+
 dots on history page are out of sync 
 Add more green for brand
 add grey circles
