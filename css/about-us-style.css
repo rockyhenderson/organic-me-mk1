@@ -173,11 +173,11 @@ footer{
   }
   .mobile-staff{
     display: block;
-    height:400px;
-    width:400px;
+    width:500px;
     margin:auto;
 
   }
+
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
@@ -463,5 +463,37 @@ footer{
     top: 50%; 
     transform: translateY(-50%);
 }
-
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "ADLaM Display";
+  }
+  #staff-button{
+    display: flex;
+  }
+  .staff-text-wrapper{
+    font-family: "ADLaM Display";
+    padding-top:30px;
+    margin-left:10px;
+  }
+  .down-arrow{
+  padding-top:48px;
+  padding-left:120px;
+  }
 /* TEMP CSS */

@@ -106,8 +106,124 @@ fillerPie.addEventListener("click", function () {
 });
 //Hisotry bar end here
 
+//ACORDIAN
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+function toggleRotateImage1() {
+  var img = document.getElementById("down-arrow-1");
 
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s";
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+function toggleRotateImage2() {
+  var img = document.getElementById("down-arrow-2");
+
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+function toggleRotateImage3() {
+  var img = document.getElementById("down-arrow-3");
+
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+function toggleRotateImage4() {
+  var img = document.getElementById("down-arrow-4");
+
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+function toggleRotateImage5() {
+  var img = document.getElementById("down-arrow-5");
+
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+function toggleRotateImage6() {
+  var img = document.getElementById("down-arrow-6");
+
+  if (img) {
+      var currentRotation = img.style.transform;
+
+      if (currentRotation === "" || currentRotation === "rotate(0deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(180deg)";
+      } else if (currentRotation === "rotate(180deg)") {
+          img.style.transition = "transform 0.5s"; 
+          img.style.transform = "rotate(0deg)";
+      }
+  } else {
+      console.log("Image with id 'down-arrow' not found.");
+  }
+}
+//ACCORDAIN 
 
 
 //modal button js
