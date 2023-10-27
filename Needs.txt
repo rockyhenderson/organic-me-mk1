@@ -5,6 +5,7 @@ COOKIE BOX
 navbar wont close properly in hamburger menu
 RESIZIING PAGE WHEN ION MODEL
 dots on history page are out of sync 
+modal does not scale with smaller screens like ipads
 
 https://www.riskified.com/about/
 steal nav bar?
