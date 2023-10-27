@@ -338,3 +338,6 @@ function rightButtonClickHandler(event) {
   modalIndex = (modalIndex + 1) % modals.length;
   showCurrentModal();
 }
+function TEST(){
+  alert("test")
+}
