@@ -338,6 +338,13 @@ function rightButtonClickHandler(event) {
   modalIndex = (modalIndex + 1) % modals.length;
   showCurrentModal();
 }
-function TEST(){
-  alert("test")
+function toggleNavbarNavAltMarkup() {
+  var navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
+
+  if (navbarNavAltMarkup.classList.contains("show")) {
+    navbarNavAltMarkup.classList.remove("show");
+  } else {
+    navbarNavAltMarkup.classList.add("show");
+  }
 }
+
