@@ -225,7 +225,19 @@ function toggleRotateImage6() {
 }
 //ACCORDAIN 
 
+//navbar scroll
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = 'white';
+    navbar.style.border = '1px lightgrey solid'
+  } else {
+    navbar.style.backgroundColor = ''; 
+    navbar.style.border = 'none'
+  }
+});
 
+//navbarscroll end
 //modal button js
 sarahShowModalButton.addEventListener('click', () => {
     sarahModal.style.display = 'block';
