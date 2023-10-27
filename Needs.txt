@@ -1,9 +1,10 @@
 
 
-history line dosent work properly click to find out, still wrong
+
 COOKIE BOX
-navbar sticky
+navbar wont close properly in hamburger menu
 RESIZIING PAGE WHEN ION MODEL
+arrows are out of line
 
 https://www.riskified.com/about/
 steal nav bar?
