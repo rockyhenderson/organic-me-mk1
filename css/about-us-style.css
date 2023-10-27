@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden ;
+    font-size: 16px;
+    font-family: "ADLaM Display";
+
+}
+header{
+    background-image: url(/img/about-us/headerbackground.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* 100% for the X-axis (width), auto for Y-axis (height) */
+    width: 100%;
+    height:50vh; /*Do NOT TOUCH THIS IT IS THE RIGHT HEIGHT */
+    font-family: "ADLaM Display";
+}
+nav{
+    font-weight: 500;
+}
+#navbar{
+    background-color: transparent;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#nav-content-wrapper{
+    max-width:1400px;
+    margin: auto;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:50px;
+    font-family: "ADLaM Display";
+}
+.cow-img-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%
+}
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.right-content{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sustainable-practice{
+    margin-top:40px;
+    padding:10px;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.history{
+    height:500px;
+    width:100%;
+    margin-bottom:40px;
+    font-family: "ADLaM Display";
+}
+.small-om-history-text{
+    display: block;
+    font-weight: 800;
+    margin-bottom: 39px;
+    margin-top: 40px;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase
+}
+.card-item{
+    border:1px solid #d8d8d8;
+    height:444px;
+    width:440px;
+    margin:auto;
+}
+.pie-container{
+    width:440px;
+    margin: auto;
+    margin-top:20px;
+    display: flex;
+    justify-content: start;
+}
+.pie {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left:5px;
+}
+.active-pie{
+    background-color: #be9032;
+}
+
+.inner-card{
+    padding:20px;
+}
+.card-container{
+    position: relative;
+    
+}
+
+.temp-img{
+    display: none;
+}
+.temp-cow{
+    display: block;
+}
+.second-image-wrapper{
+    max-width: 550px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.staff-member h1{
+    margin:20px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "ADLaM Display";
+}
+.staff-member p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "ADLaM Display";
+}
+.mugshot-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.staff-member-filler-text{
+    text-align: center;
+}
+img{
+    transition: box-shadow 0.3s ease-in-out;
+}
+.mugshot:hover{
+  box-shadow: 3px 3px 3px grey;
+}
+footer{
+    border-top:40px solid #7bc270;
+    background-color: #57ac49 ;
+    height:400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    font-family: "ADLaM Display";
+  }
+  .footer-section{
+    width:20%;
+    height:auto;
+    padding-top:20px;
+    color:black;
+  }
+
+  #contact-button{
+    position: relative;
+    background-color: #d5a038;
+    border: 2px #d5a038 solid;
+    border-radius: 10px;
+    font-family: "ADLaM Display";
+    height: 45px;
+    width: 140px;
+    text-align: center;
+    padding:6px;
+
+  }
+  .staff{
+    display: none;
+  }
+  .mobile-staff{
+    display: block;
+    width:500px;
+    margin:auto;
+
+  }
+  #filler-pie{
+    display: block;
+    height:10px ;
+    width:10px;
+    background-color: #be9032;
+    border-radius:50%;
+}
+@media (min-width: 781px) {   /*when it becomes web put rules in here */
+    *{
+        font-size: 18px;
+    }
+    main{
+        width:95%;
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top:50px;
+        font-family: "ADLaM Display";
+        flex-direction: row;
+    }
+    .cow-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height:100%
+    }
+    .left-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 45%;
+    }
+    .right-content{
+        width:45%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sustainable-practice{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mission{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-button{
+        position: absolute;
+        right:0;
+        margin-right:10px;
+      }
+    footer{
+        height:300px;
+    }
+    header{
+        height:70vh;
+    }
+    .header-tagline{
+    font-size: 70px; 
+    }
+    .temp-img{
+        display: block;
+    }
+    .temp-cow{
+        display: none;
+    }
+    .card-item{
+        border: none;
+        height:300px;
+        width:640px;
+    }
+    .pie-container{
+        width:750px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pie{
+        position: relative;
+        height: 15px;
+        width: 15px;
+    }
+    #filler-pie{
+        display: block;
+        height:15px ;
+        width:15px;
+        background-color: #be9032;
+        border-radius:50%;
+    }
+    .history-line{
+        width:90px;
+        height:5px;
+        position: absolute; 
+        background-color: inherit;
+        z-index: -1;
+        right: 5px;;
+        top:5px;
+    }
+    .staff-member{
+        width:25%;  
+        padding-top:10px;
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:120px;
+    }
+    .staff-member:hover{
+        color:#be9032
+    }
+    .staff-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        width:95vw;
+        margin: auto;
+    }
+    .second-image-wrapper{
+        margin-top:200px;
+    }
+    .active-line {
+        background-color: #be9032;
+      }
+    .history{
+        height:100vh;
+        display: inline;
+    }
+    .staff{
+        margin-top:100px;
+        position: relative;
+        display: block;
+    }
+    .mobile-staff{
+        display: none;
+    }
+    .mugshot{
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+    }
+    .StaffBox{
+        display: none;
+        margin:0;
+        z-index: 1;
+        position: absolute;
+        height:100%;
+        width:100%;
+        background-color: rebeccapurple;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width: 1200px) {
+    .mugshot{
+        height:110px;
+        width:110px;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 781px) {
+    .staff-member{
+        width: 100%;
+        margin-bottom:20px;
+        display: flex;
+    }
+    .mugshot-wrapper{
+        display: flex;
+        justify-content: start;
+        padding-left:40px;
+        width:30%;
+        height:100%;
+        border-radius: 50%;
+    }
+    .staff-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .staff-member-filler-text{
+        text-align: end;
+    }
+}
+@media (max-width: 570px) {
+    header{
+        height:40vh;
+}
+}
+/* TEMP CSS */
+.sarah-modal, .mich-modal, .oliv-modal, .mark-modal, .john-modal, .mi-modal {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white   ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
+    padding: 50px;
+    padding-left: 60px;;
+    padding-right:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: none;
+}
+.staff-text-inner-content-head{
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+}
+.staff-text-inner-content-body{
+    margin-top:40px;
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height:100%;
+    padding-bottom:40px;
+    width:40%;
+}
+.staff-text-inner-content-body h1{
+    font-size: 20px;
+}
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+  }
+.close:after {
+    transform: rotate(-45deg);
+}
+.left-scroll-arrow {
+    z-index: 4;
+    position: absolute;
+    height: 32px;
+    width: 19px;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.right-scroll-arrow {
+    z-index: 4;
+    position: absolute;
+    background-color: transparent;
+    height: 32px;
+    width: 19px;
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "ADLaM Display";
+  }
+  #staff-button{
+    display: flex;
+    justify-content: space-between;
+  }
+  .staff-text-wrapper{
+    font-family: "ADLaM Display";
+    padding-top:30px;
+    margin-left:10px;
+  }
+
+#down-arrow-1, #down-arrow-2, #down-arrow-3, #down-arrow-4, #down-arrow-5, #down-arrow-6{
+    margin:50px;
+}
+/* TEMP CSS */
+@media (max-width: 870px) {
+    .sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
+        flex-direction: column;
+    }
+    .staff-text-inner-content-head{
+        justify-content:center;
+    }
+    .staff-text-inner-content-body{
+    width:90%;
+    }
+}
