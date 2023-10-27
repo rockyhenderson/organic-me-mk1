@@ -113,19 +113,7 @@ main{
     position: relative;
     
 }
-.background-text {
-    margin:0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size:23vw;
-    color: #d6cece82;
-    z-index: -1;
-    text-align: center;
-    display: none;
 
-  }
 .temp-img{
     display: none;
 }
@@ -204,9 +192,6 @@ footer{
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
-    }
-    .background-text{
-        display: block;
     }
     main{
         width:95%;
