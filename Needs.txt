@@ -4,7 +4,7 @@
 COOKIE BOX
 navbar wont close properly in hamburger menu
 RESIZIING PAGE WHEN ION MODEL
-arrows are out of line
+dots on history page are out of sync 
 
 https://www.riskified.com/about/
 steal nav bar?
