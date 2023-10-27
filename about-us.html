@@ -1,373 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us Page</title>
-    <link rel="stylesheet" href="css/about-us-style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us Page</title>
+  <link rel="stylesheet" href="css/about-us-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  
-  <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM Display" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            OrganicMe
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="index.html" style="color:black;">Home</a>
-              <a class="nav-link" href="about-us.html" style="color:black; text-decoration:underline #d5a038 3px; text-underline-offset: 5px;">About</a>
-              <a class="nav-link" href="construction.html" style="color:black;">Contact</a>
-              <a class="nav-link" href="construction.html" style="color:black;">Location</a>
-              <a class="nav-link" href="construction.html" style="color:black;">Products</a>
-            </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
+          OrganicMe
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html" style="color:black;">Home</a>
+            <a class="nav-link" href="about-us.html"
+              style="color:black; text-decoration:underline #d5a038 3px; text-underline-offset: 5px;">About</a>
+            <a class="nav-link" href="construction.html" style="color:black;">Contact</a>
+            <a class="nav-link" href="construction.html" style="color:black;">Location</a>
+            <a class="nav-link" href="construction.html" style="color:black;">Products</a>
           </div>
-        </div>
-      </nav>
-
-
-      <h1 style="font-size: 50px; text-align: center;margin-top:10vh; ";>Making Organic Food easy </h1>
-    </header>
-    <main>
-      <div class="main-text-row">
-
-        <div class="mission">
-          <h1>Our Mission</h1>
-          <p>
-            Ecommerce has transformative powers, and we believe everyone should be
-            able to take part. But outdated solutions and overwhelmed systems create
-            uncertainty and risk.<br /><br><br>
-          
-          <b
-            >We empower businesses to realize the full potential of eCommerce by
-            making it safe, accessible, and frictionless.
-          </b>
-          
-            <br /><br><br>
-            We’ve built an eCommerce risk management platform that allows online
-            merchants to create trusted relationships with consumers. Leveraging
-            machine learning, our platform aggregates data from many of the world’s
-            largest online merchants and creates network effects that drive higher
-            sales and generate cost savings for our merchants. By accurately
-            identifying the individuals behind online interactions, our technology
-            enables merchants to provide frictionless customer experiences.
-          </p>
-          <div class="image-wrapper">
-            <img src="img/about-us/tomatohands.png" alt="" style="width:100%" />
-          </div>
-        </div>
-        <div class="temp-img long-image-wrapper">
-          <img src="img/about-us/farmpan.png" alt="" style="width:550px" />
         </div>
       </div>
-      
-      <div class="main-text-row-bottom">
-        <div class="mission">
-          <h1>Our Mission</h1>
-          <p>
-            Ecommerce has transformative powers, and we believe everyone should be
-            able to take part. But outdated solutions and overwhelmed systems create
-            uncertainty and risk.<br /><br><br>
-          
-          <b
-            >We empower businesses to realize the full potential of eCommerce by
-            making it safe, accessible, and frictionless.
-          </b>
-           
-            <br /><br><br>
-            We’ve built an eCommerce risk management platform that allows online
-            merchants to create trusted relationships with consumers. Leveraging
-            machine learning, our platform aggregates data from many of the world’s
-            largest online merchants and creates network effects that drive higher
-            sales and generate cost savings for our merchants. By accurately
-            identifying the individuals behind online interactions, our technology
-            enables merchants to provide frictionless customer experiences.
-            <br /><br><br>
-            We’ve built an eCommerce risk management platform that allows online
-            merchants to create trusted relationships with consumers. Leveraging
-            machine learning, our platform aggregates data from many of the world’s
-            largest online merchants and creates network effects that drive higher
-            sales and generate cost savings for our merchants. By accurately
-            identifying the individuals behind online interactions, our technology
-            enables merchants to provide frictionless customer experiences.
-          </p>
-          
+    </nav>
+
+
+    <h1 class="header-tagline">Making Organic Food easy </h1>
+  </header>
+  <main>
+    <div class="main-text-row">
+
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          For over two decades, Organic Me has been your trusted source for delicious, organic honey in the Scottish
+          Borders. Our commitment to providing you with the purest, most delectable honey is unwavering, and our journey
+          has been a sweet one indeed.<br><br>
+          We are stewards of the land, working in harmony with nature to create a sustainable, organic, and thriving
+          ecosystem. Our vision extends beyond business; it's a promise to our community and the planet. We're here to
+          offer you the opportunity to savor the rich, unadulterated flavors of our region while supporting ethical and
+          environmentally conscious practices. <br><br>
+          <b>Organic Me is not just a name; it's a commitment to a sweeter, healthier and more sustainable way of
+            life.</b><br><br>
+          Join us on this journey, and let's make every meal a celebration of purity,
+          taste, and conscientious living.
+
+        </p>
+        <div class="image-wrapper">
+          <img src="img/about-us/tomatohands.png" alt="" style="width:100%" />
+        </div>
+      </div>
+      <div class="temp-img long-image-wrapper">
+        <img src="img/about-us/farmpan.png" alt="" style="width:550px" />
+      </div>
+    </div>
+
+    <div class="main-text-row-bottom">
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          At Organic Me, our commitment to sustainability is woven into the very fabric of our business. We take our
+          responsibility to the environment seriously and are dedicated to making choices that leave a positive impact
+          on our planet. Our practices extend beyond organic farming to encompass every aspect of our operation. We
+          implement eco-friendly initiatives such as responsible waste management, recycling, and energy conservation.
+          Our packaging materials are carefully selected for their minimal environmental footprint, reflecting our
+          unwavering dedication to reducing waste and minimizing our carbon footprint.<br><br>
+
+          The heart of our sustainability efforts lies in our ethical and humane treatment of the land, the bees, and
+          the animals that play a vital role in our operations. We believe in nurturing a balanced ecosystem where all
+          life is respected and cherished. Our practices are rooted in promoting biodiversity, ensuring that the farms
+          we operate on are vibrant havens for wildlife and contribute to the health of the surrounding environment. By
+          choosing Organic Me, you're not just choosing organic products; you're choosing a company deeply committed to
+          nurturing a sustainable future for generations to come.<br><br>
+
+          Our sustainability practices aren't just an afterthought – they're a core part of who we are. We continually
+          seek out innovative and environmentally conscious solutions to further reduce our environmental impact. It's
+          not just about providing you with the best organic honey, meats, and produce; it's about doing so in a way
+          that makes the world a better place. We believe that by taking care of the environment, we're taking care of
+          you, our valued customers, and the future of our planet.<br><br>
+        </p>
+
       </div>
       <div class="image-wrapper" style="margin-top:200px;">
         <img src="img/about-us/farmpan.png" alt="" style="width:100%" />
       </div>
-      </div>
-    </main>
-
-    <div class="history">
-      <!-- <h1 style="position: absolute; z-index: -2; font-size: 23vw; color:lightgray "> HISTORY </h1> -->
-      <div class="card-container">
-        <small class="small-om-history-text">ORGANICME HISTORY</small>
-
-        <div class="card-item card-1"  style="display: none;">
-          <div class="inner-card">
-            <h1>1996</h1>
-            <h2>The Birth of OrganicMe</h2>
-            <p>In 1996, organicME was founded in the heart of the enchanting Scottish Borders, a region renowned for its lush, rolling hills and pristine landscapes. The founders, inspired by the region's natural beauty, set out on a mission to provide the highest-quality organic produce to the people of Scotland.</p>
-          </div>
-        </div>
-        <div class="card-item card-2"  style="display: none;">
-          <div class="inner-card">
-            <h1>1998</h1>
-            <h2>Our First Harvest</h2>
-            <p>OrganicMe proudly celebrated its first successful honey harvest in the rich fields of the Scottish Borders. Our organic honey, lovingly produced by our expert beekeepers, quickly gained a reputation for its exceptional taste and purity.</p>
-          </div>
-        </div>
-        <div class="card-item card-3"  style="display: none;">
-          <div class="inner-card">
-            <h1>2003</h1>
-            <h2> Expanding Horizons</h2>
-            <p>Responding to the growing demand for organic foods, OrganicMe expanded its product range to include not only honey but also a diverse selection of organic vegetables and meats. This expansion allowed us to offer a wide array of organic options, catering to various dietary preferences.</p>
-          </div>
-        </div>
-        <div class="card-item card-4"  style="display: none;">
-          <div class="inner-card">
-            <h1>2005</h1>
-            <h2>Commitment to Sustainability</h2>
-            <p>In 2005, we made a firm commitment to sustainability. OrganicMe embraced sustainable farming practices, ensuring that our products were not only healthy but also environmentally friendly. We implemented eco-conscious initiatives to reduce our carbon footprint and protect the pristine Scottish environment we call home.</p>
-          </div>
-        </div>
-        <div class="card-item card-5"  style="display: none;">
-          <div class="inner-card">
-            <h1>2010</h1>
-            <h2> OrganicMe Goes Online</h2>
-            <p>Recognizing the importance of accessibility, OrganicMe launched its website in 2010. This online platform made it easier for people across Scotland to discover and order our high-quality organic produce. Our digital presence allowed us to reach a broader audience while maintaining our commitment to quality.</p>
-          </div>
-        </div>
-        <div class="card-item card-6"  style="display: none;">
-          <div class="inner-card">
-            <h1>2015</h1>
-            <h2>Organic Food for All</h2>
-            <p>In 2015, we forged partnerships with local communities and educational institutions to promote the benefits of organic food. OrganicMe was dedicated to not only providing organic produce but also educating consumers about the advantages of a healthy, organic lifestyle. Our community involvement initiatives empowered individuals to make informed choices about their food.</p>
-          </div>
-        </div>
-        <div class="card-item card-7"  style="display: none;">
-          <div class="inner-card">
-            <h1>2020</h1>
-            <h2>Organic Excellence Recognized</h2>
-            <p>OrganicMe's dedication to exceptional organic produce was rewarded when we received the prestigious "Best Organic Produce Supplier" award from the Scottish Organic Food Association in 2020. This recognition highlighted our unwavering commitment to quality and our ongoing efforts to support the organic food movement in Scotland.</p>
-          </div>
-        </div>
-        <div class="card-item card-8"  style="display: none;">
-          <div class="inner-card">
-            <h1>2021</h1>
-            <h2>Expanding Distribution</h2>
-            <p>Recognizing the growing demand for organic products, OrganicMe extended its reach beyond Scotland. We began supplying our premium organic food to neighboring regions, expanding our influence and sharing the goodness of organic living with a broader audience.</p>
-          </div>
-        </div>
-        <div class="card-item card-9"  style="display: none;">
-          <div class="inner-card">
-            <h1>2023</h1>
-            <h2> A Sustainable Future</h2>
-            <p>In 2023, OrganicMe continues to lead the way in the organic food industry. We remain dedicated to promoting sustainable and eco-friendly practices in agriculture and food production. Our commitment to a sustainable future is a core value that guides our every decision, ensuring that the legacy of OrganicMe endures for generations to come.</p>
-          </div>
-        </div>
-      </div>
-      <div class="pie-container">
-        <div id="filler-pie"></div>
-        <pie class="pie active-pie pie-zero">
-          <div class="history-line active-line line-zero"  ></div>
-        </pie>
-        <pie class="pie pie-1"> <div class="history-line line-1"></div></pie>
-        <pie class="pie pie-2"> <div class="history-line line-2"></div></pie>
-        <pie class="pie pie-3"> <div class="history-line line-3"></div></pie>
-        <pie class="pie pie-4"> <div class="history-line line-4"></div></pie>
-        <pie class="pie pie-5"> <div class="history-line line-5"></div></pie>
-        <pie class="pie pie-6"> <div class="history-line line-6"></div></pie>
-        <pie class="pie pie-7"> <div class="history-line line-7"></div></pie>
-        <pie class="pie pie-8" style="display: none;"> <div class="history-line line-8" style="display: none;"></div></pie>
-      </div>
-      
     </div>
+  </main>
 
-    <div id="sarah-modal" class="sarah-modal" style="display: none;">
-      <div class="sarah-modal-content">
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/Sarah.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="sarahcloseModalButton" class="close-modal-button close"></a>
+  <div class="history">
+    <!-- <h1 style="position: absolute; z-index: -2; font-size: 23vw; color:lightgray "> HISTORY </h1> -->
+    <div class="card-container">
+      <small class="small-om-history-text">ORGANICME HISTORY</small>
+
+      <div class="card-item card-1" style="display: none;">
+        <div class="inner-card">
+          <h1>1996</h1>
+          <h2>The Birth of OrganicMe</h2>
+          <p>In 1996, organicME was founded in the heart of the enchanting Scottish Borders, a region renowned for its
+            lush, rolling hills and pristine landscapes. The founders, inspired by the region's natural beauty, set out
+            on a mission to provide the highest-quality organic produce to the people of Scotland.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>Sarah Mitch</h1>
-          <p>Organic Farm Manager <br><br></p>
-          <p>Meet Sarah Mitch, the nurturing spirit behind our thriving organic farm. With a deep-rooted passion for sustainable agriculture, Sarah has cultivated an environment that is not only bountiful but also ecologically responsible. Her role as the Organic Farm Manager involves overseeing the day-to-day operations, ensuring that our crops flourish in harmony with nature. Sarah's dedication to quality and sustainability has made our farm a shining example of responsible agriculture, and her expertise is the reason our produce is so fresh and wholesome. She is the driving force that keeps us rooted in our commitment to providing the finest organic products to our customers.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-    
-
-
-    <div id="mich-modal" class="mich-modal" style="display: none;">
-      <div class="mich-modal-content">
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/David.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="michcloseModalButton" class="close-modal-button close"></a>
+      <div class="card-item card-2" style="display: none;">
+        <div class="inner-card">
+          <h1>1998</h1>
+          <h2>Our First Harvest</h2>
+          <p>OrganicMe proudly celebrated its first successful honey harvest in the rich fields of the Scottish Borders.
+            Our organic honey, lovingly produced by our expert beekeepers, quickly gained a reputation for its
+            exceptional taste and purity.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>Michael Turner</h1>
-          <p> Head of Product Development <br><br></p>
-          <p>Innovation and vision are the hallmark of Michael Turner, our Head of Product Development. With his creative prowess and keen insight into market trends, Michael leads our product development team to new heights. He possesses a remarkable ability to translate ideas into tangible products that captivate our customers. Michael's role involves identifying emerging opportunities and trends in the industry, guiding the team through the development process, and ensuring our products are not just cutting-edge but also aligned with our values. Thanks to his leadership, our product lineup continues to evolve, offering our customers exciting and sustainable choices that enhance their lives.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-
-    <div id="oliv-modal" class="oliv-modal" style="display: none;">
-      <div class="oliv-modal-content">
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/Emily.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="olivcloseModalButton" class="close-modal-button close"></a>
+      <div class="card-item card-3" style="display: none;">
+        <div class="inner-card">
+          <h1>2003</h1>
+          <h2> Expanding Horizons</h2>
+          <p>Responding to the growing demand for organic foods, OrganicMe expanded its product range to include not
+            only honey but also a diverse selection of organic vegetables and meats. This expansion allowed us to offer
+            a wide array of organic options, catering to various dietary preferences.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>Olivia Davis</h1>
-          <p>Marketing Coordinator <br><br></p>
-          <p>Olivia Davis is the driving force behind our brand's visibility and appeal. As our Marketing Coordinator, she crafts compelling narratives that engage our audience and strengthens our market presence. Olivia's creativity knows no bounds, and her innovative marketing campaigns have boosted our brand recognition. She's not only a master of digital and traditional marketing, but she's also deeply committed to our mission of sustainability, infusing it into every aspect of our marketing efforts. Olivia's work ensures that our message reaches those who value eco-conscious products and that our brand remains synonymous with quality and responsibility.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-
-
-    <div id="mark-modal" class="mark-modal" style="display: none;">
-      <div class="mark-modal-content">   
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/Mark.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="markcloseModalButton" class="close-modal-button close"></a>
+      <div class="card-item card-4" style="display: none;">
+        <div class="inner-card">
+          <h1>2005</h1>
+          <h2>Commitment to Sustainability</h2>
+          <p>In 2005, we made a firm commitment to sustainability. OrganicMe embraced sustainable farming practices,
+            ensuring that our products were not only healthy but also environmentally friendly. We implemented
+            eco-conscious initiatives to reduce our carbon footprint and protect the pristine Scottish environment we
+            call home.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>Mark Johnson</h1>
-          <p>Quality Control Specialist <br><br></p>
-          <p>For Mark Johnson, precision and quality control are more than just a job; they're a way of life. As our Quality Control Specialist, Mark plays a crucial role in upholding our high standards for excellence. With a meticulous eye for detail, he meticulously inspects every product that leaves our facilities, ensuring that only the finest items reach our customers. Mark's commitment to quality is unwavering, and his dedication to maintaining the integrity of our products is a testament to our unwavering commitment to providing top-notch goods. When you receive a product from us, you can rest assured that it has met Mark's rigorous quality control standards.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-
-
-    <div id="john-modal" class="john-modal" style="display: none;">
-      <div class="john-modal-content">
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/John.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="johncloseModalButton" class="close-modal-button close"></a>
+      <div class="card-item card-5" style="display: none;">
+        <div class="inner-card">
+          <h1>2010</h1>
+          <h2> OrganicMe Goes Online</h2>
+          <p>Recognizing the importance of accessibility, OrganicMe launched its website in 2010. This online platform
+            made it easier for people across Scotland to discover and order our high-quality organic produce. Our
+            digital presence allowed us to reach a broader audience while maintaining our commitment to quality.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>John Patel</h1>
-          <p>Sustainability Officer <br><br></p>
-          <p>John Patel is our Sustainability Officer, and his role is at the core of our company's values. He's the guardian of our commitment to environmental responsibility and social impact. John ensures that our operations adhere to the highest sustainability standards, minimizing our carbon footprint and supporting eco-friendly initiatives. Beyond his duties, John also spearheads our efforts to give back to the community, making a positive difference in the lives of those we serve. His dedication to sustainability is a driving force behind our company's mission to make the world a greener, better place.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-
-
-    <div id="mi-modal" class="mi-modal" style="display: none;">
-      <div class="mi-modal-content">
-        <img  src="img/about-us/arrow-left-small.svg"class="left-scroll-arrow" id="left-button">
-        <div class="staff-text-inner-content-head">
-          <img src="img/headshots/Sarah2.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
-          <a id="micloseModalButton" class="close-modal-button close"></a>
+      <div class="card-item card-6" style="display: none;">
+        <div class="inner-card">
+          <h1>2015</h1>
+          <h2>Organic Food for All</h2>
+          <p>In 2015, we forged partnerships with local communities and educational institutions to promote the benefits
+            of organic food. OrganicMe was dedicated to not only providing organic produce but also educating consumers
+            about the advantages of a healthy, organic lifestyle. Our community involvement initiatives empowered
+            individuals to make informed choices about their food.</p>
         </div>
-        <div class="staff-text-inner-content-body">
-          <h1>Mi Patel</h1>
-          <p>Sustainability Officer <br><br></p>
-          <p>Mi Patel shares the role of Sustainability Officer with a dedication that mirrors John's passion for sustainability. With a joint focus on minimizing environmental impact and fostering community well-being, Mi ensures that our commitment to sustainability is integrated into every facet of our organization. From managing eco-friendly projects to promoting sustainable practices internally, Mi's work plays a pivotal role in our green journey. Their combined efforts with John solidify our company's dedication to making environmentally conscious choices and leaving a positive mark on the world.</p>
-        </div>
-        <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow"id="right-button">
       </div>
-    </div>
-    <div id="overlay" class="overlay"></div>
-
-    <div class="staff">
-      <h1 style="text-align: center; margin-bottom: 100px;">Our staff</h1>
-      <div class="staff-container">
-        <div class="staff-member" id="sarah-showModalButton">
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/Sarah.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">Sarah Mitch</h1>
-            <p class="staff-member-filler-text" style="color:black">Organic Farm Manager</p>
-          </div>
+      <div class="card-item card-7" style="display: none;">
+        <div class="inner-card">
+          <h1>2020</h1>
+          <h2>Organic Excellence Recognized</h2>
+          <p>OrganicMe's dedication to exceptional organic produce was rewarded when we received the prestigious "Best
+            Organic Produce Supplier" award from the Scottish Organic Food Association in 2020. This recognition
+            highlighted our unwavering commitment to quality and our ongoing efforts to support the organic food
+            movement in Scotland.</p>
         </div>
-        <div class="staff-member" id="mich-showModalButton">
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/David.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">Michael Turner</h1>
-            <p class="staff-member-filler-text" style="color:black">Head of Product Development</p>
-          </div>
+      </div>
+      <div class="card-item card-8" style="display: none;">
+        <div class="inner-card">
+          <h1>2021</h1>
+          <h2>Expanding Distribution</h2>
+          <p>Recognizing the growing demand for organic products, OrganicMe extended its reach beyond Scotland. We began
+            supplying our premium organic food to neighboring regions, expanding our influence and sharing the goodness
+            of organic living with a broader audience.</p>
         </div>
-        <div class="staff-member" id="oliv-showModalButton">
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/Emily.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">Olivia Davis</h1>
-            <p class="staff-member-filler-text" style="color:black">Marketing Coordinator</p>
-          </div>
-        </div>
-        <div class="staff-member"id="mark-showModalButton"> 
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/Mark.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">Mark Johnson</h1>
-            <p class="staff-member-filler-text" style="color:black">Quality Control Specialist</p>
-          </div>
-        </div>
-        <div class="staff-member" id="john-showModalButton">
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/John.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">John Patel</h1>
-            <p class="staff-member-filler-text" style="color:black">Sustainability Officer</p>
-          </div>
-        </div>
-        <div class="staff-member"id="mi-showModalButton">
-          <div class="mugshot-wrapper">
-            <img src="img/headshots/Sarah2.jpg" alt="a face" class="mugshot">
-          </div>
-          <div class="staff-text">
-            <h1 class="staff-member-filler-text">Mi Patel</h1>
-            <p class="staff-member-filler-text" style="color:black">Sustainability Officer</p>
-          </div>
+      </div>
+      <div class="card-item card-9" style="display: none;">
+        <div class="inner-card">
+          <h1>2023</h1>
+          <h2> A Sustainable Future</h2>
+          <p>In 2023, OrganicMe continues to lead the way in the organic food industry. We remain dedicated to promoting
+            sustainable and eco-friendly practices in agriculture and food production. Our commitment to a sustainable
+            future is a core value that guides our every decision, ensuring that the legacy of OrganicMe endures for
+            generations to come.</p>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="about-us-script.js"></script>
+    <div class="pie-container">
+      <div id="filler-pie"></div>
+      <pie class="pie active-pie pie-zero">
+        <div class="history-line active-line line-zero"></div>
+      </pie>
+      <pie class="pie pie-1">
+        <div class="history-line line-1"></div>
+      </pie>
+      <pie class="pie pie-2">
+        <div class="history-line line-2"></div>
+      </pie>
+      <pie class="pie pie-3">
+        <div class="history-line line-3"></div>
+      </pie>
+      <pie class="pie pie-4">
+        <div class="history-line line-4"></div>
+      </pie>
+      <pie class="pie pie-5">
+        <div class="history-line line-5"></div>
+      </pie>
+      <pie class="pie pie-6">
+        <div class="history-line line-6"></div>
+      </pie>
+      <pie class="pie pie-7">
+        <div class="history-line line-7"></div>
+      </pie>
+      <pie class="pie pie-8" style="display: none;">
+        <div class="history-line line-8" style="display: none;"></div>
+      </pie>
+    </div>
+
+  </div>
+
+  <div id="sarah-modal" class="sarah-modal" style="display: none;">
+    <div class="sarah-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/Sarah.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="sarahcloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>Sarah Mitch</h1>
+        <p>Organic Farm Manager <br><br></p>
+        <p>Meet Sarah Mitch, the nurturing spirit behind our thriving organic farm. With a deep-rooted passion for
+          sustainable agriculture, Sarah has cultivated an environment that is not only bountiful but also ecologically
+          responsible. Her role as the Organic Farm Manager involves overseeing the day-to-day operations, ensuring that
+          our crops flourish in harmony with nature. Sarah's dedication to quality and sustainability has made our farm
+          a shining example of responsible agriculture, and her expertise is the reason our produce is so fresh and
+          wholesome. She is the driving force that keeps us rooted in our commitment to providing the finest organic
+          products to our customers.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
 
 
-  </body>
+
+  <div id="mich-modal" class="mich-modal" style="display: none;">
+    <div class="mich-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/David.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="michcloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>Michael Turner</h1>
+        <p> Head of Product Development <br><br></p>
+        <p>Innovation and vision are the hallmark of Michael Turner, our Head of Product Development. With his creative
+          prowess and keen insight into market trends, Michael leads our product development team to new heights. He
+          possesses a remarkable ability to translate ideas into tangible products that captivate our customers.
+          Michael's role involves identifying emerging opportunities and trends in the industry, guiding the team
+          through the development process, and ensuring our products are not just cutting-edge but also aligned with our
+          values. Thanks to his leadership, our product lineup continues to evolve, offering our customers exciting and
+          sustainable choices that enhance their lives.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
+
+  <div id="oliv-modal" class="oliv-modal" style="display: none;">
+    <div class="oliv-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/Emily.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="olivcloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>Olivia Davis</h1>
+        <p>Marketing Coordinator <br><br></p>
+        <p>Olivia Davis is the driving force behind our brand's visibility and appeal. As our Marketing Coordinator, she
+          crafts compelling narratives that engage our audience and strengthens our market presence. Olivia's creativity
+          knows no bounds, and her innovative marketing campaigns have boosted our brand recognition. She's not only a
+          master of digital and traditional marketing, but she's also deeply committed to our mission of sustainability,
+          infusing it into every aspect of our marketing efforts. Olivia's work ensures that our message reaches those
+          who value eco-conscious products and that our brand remains synonymous with quality and responsibility.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
+
+
+  <div id="mark-modal" class="mark-modal" style="display: none;">
+    <div class="mark-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/Mark.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="markcloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>Mark Johnson</h1>
+        <p>Quality Control Specialist <br><br></p>
+        <p>For Mark Johnson, precision and quality control are more than just a job; they're a way of life. As our
+          Quality Control Specialist, Mark plays a crucial role in upholding our high standards for excellence. With a
+          meticulous eye for detail, he meticulously inspects every product that leaves our facilities, ensuring that
+          only the finest items reach our customers. Mark's commitment to quality is unwavering, and his dedication to
+          maintaining the integrity of our products is a testament to our unwavering commitment to providing top-notch
+          goods. When you receive a product from us, you can rest assured that it has met Mark's rigorous quality
+          control standards.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
+
+
+  <div id="john-modal" class="john-modal" style="display: none;">
+    <div class="john-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/John.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="johncloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>John Patel</h1>
+        <p>Sustainability Officer <br><br></p>
+        <p>John Patel is our Sustainability Officer, and his role is at the core of our company's values. He's the
+          guardian of our commitment to environmental responsibility and social impact. John ensures that our operations
+          adhere to the highest sustainability standards, minimizing our carbon footprint and supporting eco-friendly
+          initiatives. Beyond his duties, John also spearheads our efforts to give back to the community, making a
+          positive difference in the lives of those we serve. His dedication to sustainability is a driving force behind
+          our company's mission to make the world a greener, better place.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
+
+
+  <div id="mi-modal" class="mi-modal" style="display: none;">
+    <div class="mi-modal-content">
+      <img src="img/about-us/arrow-left-small.svg" class="left-scroll-arrow" id="left-button">
+      <div class="staff-text-inner-content-head">
+        <img src="img/headshots/Sarah2.jpg" alt="a face" style="height:400px; width:400px; border-radius: 50%;">
+        <a id="micloseModalButton" class="close-modal-button close"></a>
+      </div>
+      <div class="staff-text-inner-content-body">
+        <h1>Mi Patel</h1>
+        <p>Sustainability Officer <br><br></p>
+        <p>Mi Patel shares the role of Sustainability Officer with a dedication that mirrors John's passion for
+          sustainability. With a joint focus on minimizing environmental impact and fostering community well-being, Mi
+          ensures that our commitment to sustainability is integrated into every facet of our organization. From
+          managing eco-friendly projects to promoting sustainable practices internally, Mi's work plays a pivotal role
+          in our green journey. Their combined efforts with John solidify our company's dedication to making
+          environmentally conscious choices and leaving a positive mark on the world.</p>
+      </div>
+      <img src="img/about-us/arrow-right-small.svg" class="right-scroll-arrow" id="right-button">
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="staff">
+    <h1 style="text-align: center; margin-bottom: 100px;">Our staff</h1>
+    <div class="staff-container">
+      <div class="staff-member" id="sarah-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/Sarah.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">Sarah Mitch</h1>
+          <p class="staff-member-filler-text" style="color:black">Organic Farm Manager</p>
+        </div>
+      </div>
+      <div class="staff-member" id="mich-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/David.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">Michael Turner</h1>
+          <p class="staff-member-filler-text" style="color:black">Head of Product Development</p>
+        </div>
+      </div>
+      <div class="staff-member" id="oliv-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/Emily.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">Olivia Davis</h1>
+          <p class="staff-member-filler-text" style="color:black">Marketing Coordinator</p>
+        </div>
+      </div>
+      <div class="staff-member" id="mark-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/Mark.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">Mark Johnson</h1>
+          <p class="staff-member-filler-text" style="color:black">Quality Control Specialist</p>
+        </div>
+      </div>
+      <div class="staff-member" id="john-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/John.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">John Patel</h1>
+          <p class="staff-member-filler-text" style="color:black">Sustainability Officer</p>
+        </div>
+      </div>
+      <div class="staff-member" id="mi-showModalButton">
+        <div class="mugshot-wrapper">
+          <img src="img/headshots/Sarah2.jpg" alt="a face" class="mugshot">
+        </div>
+        <div class="staff-text">
+          <h1 class="staff-member-filler-text">Mi Patel</h1>
+          <p class="staff-member-filler-text" style="color:black">Sustainability Officer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="about-us-script.js"></script>
+
+
+</body>
+<footer>
+  <div class="footer-section">
+    <h5>OrganicMe</h5>
+    <p>This place<br> Edinburgh <br> EH1 1LY <br> </p>
+    <p>Copyright Jack Henderson &#169; </p>
+  </div>
+  <div class="footer-section">
+    <h5> Our Content</h5>
+    <p>About us</p>
+    <p>Contact</p>
+    <p>Legal Stuff</p>
+    <p>Location</p>
+  </div>
+  <div class="footer-section">
+    <h5>Our Socials</h5>
+    <a href="construction.html"
+      style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Instagram</a>
+    <a href="construction.html"
+      style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Facebook</a>
+    <a href="construction.html"
+      style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Twitter</a>
+    <a href="construction.html"
+      style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Tiktok</a>
+  </div>
+
+
+</footer>
+
 </html>

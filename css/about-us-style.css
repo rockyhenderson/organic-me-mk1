@@ -4,7 +4,7 @@ body {
     width: 100%;
     overflow-x:hidden ;
     font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 
 }
 header{
@@ -13,15 +13,24 @@ header{
     background-position: center;
     background-size: cover;
     height:50vh; /*Do NOT TOUCH THIS IT IS THE RIGHT HEIGHT */
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
+    margin:1vw;
+    border-radius: 25px;
 }
 nav{
     font-weight: 500;
 }
+.header-tagline{
+    z-index: 2;
+    font-size: 50px; 
+    text-align: center;
+    margin-top:4vh; 
+    font-family: 'Shadows Into Light', cursive; 
+}
 main{
     width:90vw;
     margin: auto;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 }
 .image-wrapper{
     max-width: 550px;
@@ -32,7 +41,7 @@ main{
 }
 .mission, .story{
     width:90%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 
 }
 
@@ -53,7 +62,7 @@ main{
     height:500px;
     width:100%;
     margin-bottom:40px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 }
 .small-om-history-text{
     display: block;
@@ -105,12 +114,12 @@ main{
     margin:20px;
     font-size: 18px;
     font-weight: 800;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 }
 .staff-member p{
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "ADLaM Display";
 }
 .mugshot-wrapper{
     display: flex;
@@ -125,12 +134,33 @@ img{
 .mugshot:hover{
   box-shadow: 3px 3px 3px grey;
 }
+footer{
+    border-top:40px solid #7bc270;
+    background-color: #57ac49 ;
+    height:400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    font-family: "ADLaM Display";
+  }
+  .footer-section{
+    width:20%;
+    height:auto;
+    padding-top:20px;
+    color:black;
+  }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
     }
+    footer{
+        height:300px;
+    }
     header{
         height:70vh;
+    }
+    .header-tagline{
+    font-size: 70px; 
     }
     .main-text-row{
         flex-direction: row;
