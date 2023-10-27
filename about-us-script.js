@@ -338,6 +338,10 @@ function rightButtonClickHandler(event) {
   modalIndex = (modalIndex + 1) % modals.length;
   showCurrentModal();
 }
+
+
+
+//nav bar fix
 function toggleNavbarNavAltMarkup() {
   var navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
 
