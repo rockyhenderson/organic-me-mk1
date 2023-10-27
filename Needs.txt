@@ -2,16 +2,10 @@
 
 
 COOKIE BOX
-navbar wont close properly in hamburger menu
 RESIZIING PAGE WHEN ION MODEL
 dots on history page are out of sync 
-modal does not scale with smaller screens like ipads
 Add more green for brand
 add grey circles
-NEED TO FIX HOME PAGE IN NEW BRANCH
 
-https://www.riskified.com/about/
-steal nav bar?
 
-collapse navbar-collapse
 

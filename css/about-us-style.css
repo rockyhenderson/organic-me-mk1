@@ -210,7 +210,7 @@ footer{
     }
     main{
         width:95%;
-        max-width: 1200px;
+        max-width: 1500px;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -359,11 +359,6 @@ footer{
         border-radius: 50%;
     }
 }
-@media (max-width: 870px) {
-    .staff-member{
-        width:44%;  
-    }
-}
 @media (max-width: 781px) {
     .staff-member{
         width: 100%;
@@ -401,7 +396,6 @@ footer{
     width: 100%;
     height: 100%;
     background-color: white   ;
-    display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,8 +407,7 @@ footer{
     padding-right:60px;
     display: flex;
     flex-direction: row;
-
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .overlay {
@@ -430,7 +423,6 @@ footer{
     display: flex;
     justify-content: space-between;
     height:100%;
-    width:40%;
 }
 .staff-text-inner-content-body{
     margin-top:40px;
@@ -524,3 +516,14 @@ footer{
     margin:50px;
 }
 /* TEMP CSS */
+@media (max-width: 870px) {
+    .sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
+        flex-direction: column;
+    }
+    .staff-text-inner-content-head{
+        justify-content:center;
+    }
+    .staff-text-inner-content-body{
+    width:90%;
+    }
+}

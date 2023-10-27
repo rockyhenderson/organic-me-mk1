@@ -240,8 +240,8 @@ window.addEventListener('scroll', function() {
 //navbarscroll end
 //modal button js
 sarahShowModalButton.addEventListener('click', () => {
-    sarahModal.style.display = 'block';
-    overlay.style.display = 'block';
+    sarahModal.style.display = 'flex';
+    overlay.style.display = 'flex';
 });
 
 sarahcloseModalButton.addEventListener('click', () => {
@@ -250,8 +250,8 @@ sarahcloseModalButton.addEventListener('click', () => {
 });
 
 michShowModalButton.addEventListener('click', () => {
-  michModal.style.display = 'block';
-  overlay.style.display = 'block';
+  michModal.style.display = 'flex';
+  overlay.style.display = 'flex';
 });
 michcloseModalButton.addEventListener('click', () => {
   michModal.style.display = 'none';
@@ -259,8 +259,8 @@ michcloseModalButton.addEventListener('click', () => {
 });
 
 olivShowModalButton.addEventListener('click', () => {
-  olivModal.style.display = 'block';
-  overlay.style.display = 'block';
+  olivModal.style.display = 'flex';
+  overlay.style.display = 'flex';
 });
 olivcloseModalButton.addEventListener('click', () => {
   olivModal.style.display = 'none';
@@ -268,8 +268,8 @@ olivcloseModalButton.addEventListener('click', () => {
 });
 
 markShowModalButton.addEventListener('click', () => {
-  markModal.style.display = 'block';
-  overlay.style.display = 'block';
+  markModal.style.display = 'flex';
+  overlay.style.display = 'flex';
 });
 markcloseModalButton.addEventListener('click', () => {
   markModal.style.display = 'none';
@@ -277,8 +277,8 @@ markcloseModalButton.addEventListener('click', () => {
 });
 
 johnShowModalButton.addEventListener('click', () => {
-  johnModal.style.display = 'block';
-  overlay.style.display = 'block';
+  johnModal.style.display = 'flex';
+  overlay.style.display = 'flex';
 });
 johncloseModalButton.addEventListener('click', () => {
   johnModal.style.display = 'none';
@@ -286,8 +286,8 @@ johncloseModalButton.addEventListener('click', () => {
 });
 
 miShowModalButton.addEventListener('click', () => {
-  miModal.style.display = 'block';
-  overlay.style.display = 'block';
+  miModal.style.display = 'flex';
+  overlay.style.display = 'flex';
 });
 micloseModalButton.addEventListener('click', () => {
   miModal.style.display = 'none';
