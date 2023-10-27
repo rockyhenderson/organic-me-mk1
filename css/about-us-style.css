@@ -11,8 +11,8 @@ body {
 header{
     background-image: url(/img/about-us/headerbackground.png);
     background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover; /* 100% for the X-axis (width), auto for Y-axis (height) */
+    background-position: center center;
+    background-size: cover; /* 100% for the X-axis (width), auto for Y-axis (height) */
     width: 100%;
     height:50vh; /*Do NOT TOUCH THIS IT IS THE RIGHT HEIGHT */
     font-family: "ADLaM Display";
@@ -498,14 +498,15 @@ footer{
   }
   #staff-button{
     display: flex;
+    justify-content: space-between;
   }
   .staff-text-wrapper{
     font-family: "ADLaM Display";
     padding-top:30px;
     margin-left:10px;
   }
-  .down-arrow{
-  padding-top:48px;
-  padding-left:120px;
-  }
+
+#down-arrow-1, #down-arrow-2, #down-arrow-3, #down-arrow-4, #down-arrow-5, #down-arrow-6{
+    margin:50px;
+}
 /* TEMP CSS */
