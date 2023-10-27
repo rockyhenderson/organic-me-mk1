@@ -27,35 +27,39 @@ nav{
     font-family: 'Shadows Into Light', cursive; 
 }
 main{
-    width:90vw;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:50px;
     font-family: "ADLaM Display";
 }
-.image-wrapper{
-    max-width: 550px;
-    height:auto;
-}
-.long-image-wrapper{
-    height:400px;
-}
-.mission, .story{
-    width:90%;
-    font-family: "ADLaM Display";
-
-}
-
-.main-text-row, .main-text-row-bottom{
+.cow-img-wrapper{
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top:100px ;
-    max-width:1400px;
+    flex-direction: column;
+    justify-content: center;
+    height:100%
 }
-.main-text-row-bottom{
+.left-content{
     display: flex;
-    flex-wrap: wrap;
-    
-    max-width:1400px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.right-content{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sustainable-practice{
+    margin-top:40px;
+    padding:10px;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
 }
 .history{
     height:500px;
@@ -101,6 +105,9 @@ main{
 }
 .temp-img{
     display: none;
+}
+.temp-cow{
+    display: block;
 }
 .second-image-wrapper{
     max-width: 550px;
@@ -148,16 +155,75 @@ footer{
     padding-top:20px;
     color:black;
   }
-  .cow-img{
-    margin-top:1px;
+
+  #contact-button{
+    position: relative;
+    background-color: #d5a038;
+    border: 2px #d5a038 solid;
+    border-radius: 10px;
+    font-family: "ADLaM Display";
+    height: 45px;
+    width: 140px;
+    text-align: center;
+    padding:6px;
+
+  }
+  .staff{
+    display: none;
+  }
+  .mobile-staff{
+    display: block;
+    height:400px;
+    width:400px;
+    margin:auto;
+
   }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
     *{
         font-size: 18px;
     }
-    .cow-img{
-        margin-top:400px;
+    main{
+        width:95%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top:50px;
+        font-family: "ADLaM Display";
+        flex-direction: row;
     }
+    .cow-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height:100%
+    }
+    .left-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 45%;
+    }
+    .right-content{
+        width:45%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sustainable-practice{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mission{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-button{
+        position: absolute;
+        right:0;
+        margin-right:10px;
+      }
     footer{
         height:300px;
     }
@@ -167,22 +233,12 @@ footer{
     .header-tagline{
     font-size: 70px; 
     }
-    .main-text-row{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .main-text-row-bottom{
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        margin-top:-100px;
-    }
-    .mission,.story{
-        width:40%;
-
-    }
     .temp-img{
         display: block;
-    } 
+    }
+    .temp-cow{
+        display: none;
+    }
     .card-item{
         border: none;
         height:300px;
@@ -248,6 +304,10 @@ footer{
     .staff{
         margin-top:100px;
         position: relative;
+        display: block;
+    }
+    .mobile-staff{
+        display: none;
     }
     .mugshot{
         height:300px;
@@ -321,7 +381,6 @@ footer{
     justify-content: center;
 
 }
-
 .sarah-modal-content, .mich-modal-content, .oliv-modal-content, .mark-modal-content, .john-modal-content, .mi-modal-content {
     padding: 50px;
     padding-left: 60px;;

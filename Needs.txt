@@ -7,3 +7,114 @@ put h1 in header onto text so it scales proportinatly
 
 https://www.riskified.com/about/
 steal nav bar?
+
+main{
+    width:90vw;
+    margin: auto;
+    font-family: "ADLaM Display";
+}
+.image-wrapper{
+    max-width: 550px;
+    height:auto;
+}
+.long-image-wrapper{
+    height:400px;
+}
+.mission, .story{
+    width:90%;
+    font-family: "ADLaM Display";
+
+}
+
+.main-text-row, .main-text-row-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top:100px ;
+    max-width:1400px;
+}
+.main-text-row-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width:1400px;
+}
+
+
+
+.main-text-row{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-text-row-bottom{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-top:-100px;
+    }
+    .mission,.story{
+        width:40%;
+
+    }
+    .temp-img{
+        display: block;
+    } 
+
+    <main>
+    <div class="main-text-row">
+
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          For over two decades, Organic Me has been your trusted source for delicious, organic honey in the Scottish
+          Borders. Our commitment to providing you with the purest, most delectable honey is unwavering, and our journey
+          has been a sweet one indeed.<br><br>
+          We are stewards of the land, working in harmony with nature to create a sustainable, organic, and thriving
+          ecosystem. Our vision extends beyond business; it's a promise to our community and the planet. We're here to
+          offer you the opportunity to savor the rich, unadulterated flavors of our region while supporting ethical and
+          environmentally conscious practices. <br><br>
+          <b>Organic Me is not just a name; it's a commitment to a sweeter, healthier and more sustainable way of
+            life.</b><br><br>
+          Join us on this journey, and let's make every meal a celebration of purity,
+          taste, and conscientious living.
+
+        </p>
+        <div class="image-wrapper">
+          <img src="img/about-us/tomatohands.png" alt="" style="width:100%" />
+        </div>
+      </div>
+      <div class="temp-img long-image-wrapper">
+        <img src="img/about-us/farmpan.png" alt="" style="width:550px" />
+      </div>
+    </div>
+
+    <div class="main-text-row-bottom">
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>
+          At Organic Me, our commitment to sustainability is woven into the very fabric of our business. We take our
+          responsibility to the environment seriously and are dedicated to making choices that leave a positive impact
+          on our planet. Our practices extend beyond organic farming to encompass every aspect of our operation. We
+          implement eco-friendly initiatives such as responsible waste management, recycling, and energy conservation.
+          Our packaging materials are carefully selected for their minimal environmental footprint, reflecting our
+          unwavering dedication to reducing waste and minimizing our carbon footprint.<br><br>
+
+          The heart of our sustainability efforts lies in our ethical and humane treatment of the land, the bees, and
+          the animals that play a vital role in our operations. We believe in nurturing a balanced ecosystem where all
+          life is respected and cherished. Our practices are rooted in promoting biodiversity, ensuring that the farms
+          we operate on are vibrant havens for wildlife and contribute to the health of the surrounding environment. By
+          choosing Organic Me, you're not just choosing organic products; you're choosing a company deeply committed to
+          nurturing a sustainable future for generations to come.<br><br>
+
+          Our sustainability practices aren't just an afterthought – they're a core part of who we are. We continually
+          seek out innovative and environmentally conscious solutions to further reduce our environmental impact. It's
+          not just about providing you with the best organic honey, meats, and produce; it's about doing so in a way
+          that makes the world a better place. We believe that by taking care of the environment, we're taking care of
+          you, our valued customers, and the future of our planet.<br><br>  
+        </p>
+
+      </div>
+      <div class="image-wrapper cow-img">
+        <img src="img/about-us/sillycows.png.jpg" alt="" style="width:100%;" />
+      </div>
+    </div>
+  </main>
