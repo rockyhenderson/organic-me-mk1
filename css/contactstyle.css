@@ -4,6 +4,20 @@ body{
     width:100vw;
     display: flex;
 }
+nav{
+    font-weight: 500;
+}
+#navbar{
+    background-color: transparent;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#nav-content-wrapper{
+    max-width:1400px;
+    margin: auto;
+}
 .right-side{
     width:50vw;
     height: 100vh;
