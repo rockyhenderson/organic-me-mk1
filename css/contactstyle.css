@@ -3,12 +3,13 @@ main{
     overflow: hidden;
     width:100vw;
     display: flex;
+    font-family: "ADLaM Display";
 }
 nav{
     font-weight: 500;
 }
 #navbar{
-    background-color: white;
+    background-color: transparent;
     width:100%;
     position: fixed;
     top: 0;
