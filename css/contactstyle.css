@@ -1,3 +1,16 @@
 body{
-    background-color:hotpink;
+    margin:0;
+    overflow: hidden;
+    width:100vw;
+    display: flex;
+}
+.right-side{
+    width:50vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+}
+.left-side{
+    width:50vw;
+    height: 100vh;
+    background-color: green;
 }
