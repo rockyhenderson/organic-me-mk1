@@ -70,13 +70,21 @@
       <a onclick="SortByName()" style="color:#254c50; text-align: center;font-size: 22px; margin-top:40px;">See them all? &#8599</a>
     </div>
   </main>
-  <form onsubmit="updateProductList(); return false;">
-    <input type="text" id="search-input" />
-    <button class="input-button" type="submit">Search</button>
-    <button onclick="SortByPrice()">Sort by price</button>
-  <button onclick="SortByName()">Sort by Alphabetic</button>
-  </form>
   <div class="product-section">
+    <div class="filter-menu">
+      <form onsubmit="updateProductList(); return false;">
+        <h1>Filter By</h1>
+        <input type="text" id="search-input" placeholder="Search your product here" /><br><br>
+        <button onclick="SortByPrice()">Sort by price</button><br><br>
+      <button onclick="SortByName()">Sort by Alphabetic</button><br>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> Honey</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> Meat</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> Veg</label><br>
+      </form>
+    </div>
     <div class="item-section">
       <div id="productList"></div>
     </div>
