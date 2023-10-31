@@ -20,12 +20,14 @@ nav{
     margin: auto;
 }
 .right-side{
+    background-image: url("../img/qsheep.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
     width:50vw;
     height: 100vh;
-    background-color: rebeccapurple;
 }
 .left-side{
     width:50vw;
     height: 100vh;
-    background-color: green;
+    background-color: #57ac49;
 }
