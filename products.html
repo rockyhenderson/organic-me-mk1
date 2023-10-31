@@ -20,6 +20,7 @@
   <script src="FILLER THIS"></script>
   <link rel="stylesheet" href="css/product.css">
   <script src="script/global.js"></script>
+  <script src="script/product.js"></script>
 </head>
 
 <body>
@@ -55,17 +56,31 @@
       </div>
     </div>
   </nav>
-  <main>
+  <main style="display: ;">
     <h1 style="padding-top:100px; color:#254c50; text-align: center;">Our Products</h1>
     <div class="product-box-wrapper">
-      <div class="meat">
+      <div class="meat" onclick="showMeat()">
       </div>
-      <div class="honey">
+      <div class="honey"  onclick="showHoney()">
       </div>
-      <div class="veg">
+      <div class="veg"  onclick="showVeg()">
       </div>
     </div>
+    <div style="display:flex; justify-content: center; margin-bottom: 20px;">
+      <a onclick="SortByName()" style="color:#254c50; text-align: center;font-size: 22px; margin-top:40px;">See them all? &#8599</a>
+    </div>
   </main>
+  <form onsubmit="updateProductList(); return false;">
+    <input type="text" id="search-input" />
+    <button class="input-button" type="submit">Search</button>
+    <button onclick="SortByPrice()">Sort by price</button>
+  <button onclick="SortByName()">Sort by Alphabetic</button>
+  </form>
+  <div class="product-section">
+    <div class="item-section">
+      <div id="productList"></div>
+    </div>
+  </div>
 </body>
 <footer>
   <div class="footer-section">

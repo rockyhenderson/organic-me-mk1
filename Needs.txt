@@ -1,1 +1,5 @@
 fix about page header by adding min and max height value, crumples when in bottom orientated dev tools
+nav bar scaling for bigger screen sizes. ie the text getting bigger
+Price match statement??
+Box's?
+max width for product divs needs to be set
