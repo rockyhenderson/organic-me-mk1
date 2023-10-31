@@ -19,15 +19,28 @@ nav{
     max-width:1400px;
     margin: auto;
 }
-.right-side{
+.left-side{
     background-image: url("../img/qsheep.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     width:50vw;
     height: 100vh;
 }
-.left-side{
+.right-side{
     width:50vw;
-    height: 100vh;
     background-color: #57ac49;
+    height: 100vh;
+}
+.vert-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+
+}
+.hor-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
 }
