@@ -28,7 +28,7 @@ nav{
 }
 .right-side{
     width:50vw;
-    background-color: #57ac49;
+    background-image: linear-gradient(to right, #57ac49 , #7bc270);
     height: 100vh;
 }
 .vert-wrapper{

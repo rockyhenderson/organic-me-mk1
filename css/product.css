@@ -1,41 +1,105 @@
 body {
-    margin: 0;
-    padding:0;
-    height: 100%;
-    width: 100%;
-    overflow-x:hidden ;
-    font-family: "ADLaM Display";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "ADLaM Display";
 
 }
 
-#navbar{
-    background-color: transparent;
-    width:100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
+header {
+  background-image: url("../img/products/headerimg.jpg");
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 100% for the X-axis (width), auto for Y-axis (height) */
+}
+
+#navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 
 }
-#nav-content-wrapper{
-    max-width:1400px;
-    margin: auto;
-}
-#contact-button{
-    position: relative;
-    background-color: #d5a038;
-    border: 2px #d5a038 solid;
-    border-radius: 10px;
-    font-family: "ADLaM Display";
-    height: 45px;
-    width: 140px;
-    text-align: center;
-    padding:6px;
 
-  }
-  @media (min-width: 781px) { 
-  #contact-button{
+#nav-content-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#contact-button {
+  position: relative;
+  background-color: #d5a038;
+  border: 2px #d5a038 solid;
+  border-radius: 10px;
+  font-family: "ADLaM Display";
+  height: 45px;
+  width: 140px;
+  text-align: center;
+  padding: 6px;
+
+}
+.product-box-wrapper{
+  margin-top:100px;
+  display: flex;
+  justify-content:  space-evenly;
+
+}
+.meat, .veg{
+  width:20vw;
+  max-width: 1000px;
+  height:60vh;
+  background-color: rebeccapurple;
+}
+.honey{
+  height:80vh;
+  width:20vw;
+  max-width: 1000px;
+  background-color: rebeccapurple;
+}
+footer{
+  margin-top:100px;
+  border-top:40px solid #7bc270;
+  background-color: #57ac49 ;
+  height:400px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  font-family: "ADLaM Display";
+}
+.footer-section{
+  width:20%;
+  height:auto;
+  padding-top:20px;
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 781px) {
+  #contact-button {
     position: absolute;
-    right:0;
-    margin-right:10px;
+    right: 0;
+    margin-right: 10px;
   }
 }
