@@ -1,0 +1,46 @@
+main{
+    margin:0;
+    overflow: hidden;
+    width:100vw;
+    display: flex;
+    font-family: "ADLaM Display";
+}
+nav{
+    font-weight: 500;
+}
+#navbar{
+    background-color: transparent;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#nav-content-wrapper{
+    max-width:1400px;
+    margin: auto;
+}
+.left-side{
+    background-image: url("../img/qsheep.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width:50vw;
+    height: 100vh;
+}
+.right-side{
+    width:50vw;
+    background-color: #57ac49;
+    height: 100vh;
+}
+.vert-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+
+}
+.hor-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
