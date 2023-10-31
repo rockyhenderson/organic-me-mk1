@@ -45,22 +45,32 @@ header {
 
 }
 .product-box-wrapper{
-  margin-top:100px;
+  margin-top:50px;
   display: flex;
   justify-content:  space-evenly;
 
 }
-.meat, .veg{
+.veg{
   width:20vw;
   max-width: 1000px;
   height:60vh;
-  background-color: rebeccapurple;
+  border-radius: 25px;
+  background-color: #7bc270;
 }
-.honey{
-  height:80vh;
+.meat{
   width:20vw;
   max-width: 1000px;
-  background-color: rebeccapurple;
+  height:60vh;
+  border-radius: 25px;
+  background-color: #613613;
+}
+.honey{
+  height:75vh;
+  width:20vw;
+  max-width: 1000px;
+  border-radius: 25px;
+  background-color: #d5a038;
+
 }
 footer{
   margin-top:100px;

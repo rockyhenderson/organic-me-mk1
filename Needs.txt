@@ -1,0 +1,1 @@
+fix about page header by adding min and max height value, crumples when in bottom orientated dev tools
