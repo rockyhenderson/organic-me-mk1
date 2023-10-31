@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden ;
+    font-family: "ADLaM Display";
+
+}
+
+#navbar{
+    background-color: transparent;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+}
+#nav-content-wrapper{
+    max-width:1400px;
+    margin: auto;
+}
+#contact-button{
+    position: relative;
+    background-color: #d5a038;
+    border: 2px #d5a038 solid;
+    border-radius: 10px;
+    font-family: "ADLaM Display";
+    height: 45px;
+    width: 140px;
+    text-align: center;
+    padding:6px;
+
+  }
+  @media (min-width: 781px) { 
+  #contact-button{
+    position: absolute;
+    right:0;
+    margin-right:10px;
+  }
+}

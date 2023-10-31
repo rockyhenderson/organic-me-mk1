@@ -18,7 +18,8 @@ header{
     font-family: "ADLaM Display";
 }
 nav{
-    font-weight: 500;
+    font-family: "ADLaM Display";
+    font-size:16px;
 }
 #navbar{
     background-color: transparent;
@@ -197,9 +198,7 @@ footer{
     border-radius:50%;
 }
 @media (min-width: 781px) {   /*when it becomes web put rules in here */
-    *{
-        font-size: 18px;
-    }
+
     main{
         width:95%;
         max-width: 1500px;
