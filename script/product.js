@@ -36,7 +36,7 @@ $(document).ready(function(){
       products.sort((a, b) => a.name.localeCompare(b.name)); // sorts by name
       createDiv()
   }
-  // Attach the searchProducts function to the input's "keyup" event using jQuery
+  // atach the searchProducts function to the input's "keyup" event using jQuery
   
   function createDiv(){
       $("#productList").html(""); //clears div
@@ -62,6 +62,10 @@ $(document).ready(function(){
           // adds div to container
           $('#productList').append(div);
       }
+  }
+  function sortByType(){
+    //pass in checkbox type and then run specific code based on it. else, elif, if
+    //run event listner to check if box is checked or unchecked,
   }
   function updateProductList() {
     $("#productList").empty(); // Clear existing divs
