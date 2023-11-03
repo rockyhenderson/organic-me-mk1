@@ -1,3 +1,7 @@
+let clickTimeVeg = 0;
+let clickTimeMeat = 0;
+let clickTimeHoney = 0;
+console.log(clickTimeVeg)
 $(document).ready(function () {
   $.ajax({
     url: "../product-section-content/products.json",
@@ -55,9 +59,18 @@ function sortByType() {
   //run event listner to check if box is checked or unchecked,
 }
 
-document.getElementById("TestButton").addEventListener("click"){
-  alert("gu")
-};
+function clickedVeg(){
+  clickTimeVeg = clickTimeVeg +1
+  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
+}
+function clickedMeat(){
+  clickTimeMeat = clickTimeMeat +1
+  console.log(clickTimeMeat) //makeshift click counter to swittch between filters and not filtering them
+}
+function clickedHoney(){
+  clickTimeVeg = clickTimeVeg +1
+  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
+}
 
 
 
@@ -70,7 +83,6 @@ function updateProductList() {
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().startsWith(searchText)
   );
-  console.log(filteredProducts);
   if (filteredProducts.length === 0) {
     var div = $('<div class="product-box">');
     var h2 = $("<h2>").text(
