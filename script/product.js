@@ -25,9 +25,53 @@ function SortByPrice() {
 function SortByName() {
   //starts function
   products.sort((a, b) => a.name.localeCompare(b.name)); // sorts by name
+  console.log(products)
   createDiv();
 }
 // atach the searchProducts function to the input's "keyup" event using jQuery
+
+function sortByType() {
+  //pass in checkbox type and then run specific code based on it. else, elif, if
+  //run event listner to check if box is checked or unchecked,
+}
+
+function clickedVeg(){
+  clickTimeVeg = clickTimeVeg +1
+  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
+  if (clickTimeVeg % 2 === 0) {
+    vegProducts = products.filter(product => product.type !== "Vegetables");
+    createDiv()
+  } else {
+    vegProducts = products.filter(product => product.type === "Vegetables");
+    console.log(vegProducts);
+    createDiv();
+  }
+}
+
+function clickedMeat(){
+  clickTimeMeat = clickTimeMeat +1
+  console.log(clickTimeMeat) //makeshift click counter to swittch between filters and not filtering them
+  if (clickTimeMeat % 2 === 0) {
+    meatProducts = products.filter(product => product.type !== "Meat");
+    createDiv()
+  } else {
+    meatProducts = products.filter(product => product.type === "Meat");
+    console.log(meatProducts);
+    createDiv();
+  }
+}
+
+function clickedHoney(){
+  clickTimeHoney = clickTimeHoney + 1;
+  if (clickTimeHoney % 2 === 0) {
+    const honeyProducts = products.filter(product => product.type !== "Honey");
+    createDiv()
+  } else {
+    const honeyProducts = products.filter(product => product.type === "Honey");
+    console.log(honeyProducts);
+    createDiv();
+  }
+}
 
 function createDiv() {
   $("#productList").html(""); //clears div
@@ -54,26 +98,6 @@ function createDiv() {
     $("#productList").append(div);
   }
 }
-function sortByType() {
-  //pass in checkbox type and then run specific code based on it. else, elif, if
-  //run event listner to check if box is checked or unchecked,
-}
-
-function clickedVeg(){
-  clickTimeVeg = clickTimeVeg +1
-  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
-}
-function clickedMeat(){
-  clickTimeMeat = clickTimeMeat +1
-  console.log(clickTimeMeat) //makeshift click counter to swittch between filters and not filtering them
-}
-function clickedHoney(){
-  clickTimeVeg = clickTimeVeg +1
-  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
-}
-
-
-
 
 function updateProductList() {
   $("#productList").empty(); // Clear existing divs
@@ -119,3 +143,4 @@ $(document).ready(function () {
     updateProductList();
   });
 });
+
