@@ -24,7 +24,6 @@ function SortByPrice() {
 function SortByName() {
   //starts function
   products.sort((a, b) => a.name.localeCompare(b.name)); // sorts by name
-  console.log(products)
   createDiv();
 }
 // atach the searchProducts function to the input's "keyup" event using jQuery
@@ -34,55 +33,58 @@ function sortByType() {
   //run event listner to check if box is checked or unchecked,
 }
 
-function clickedVeg(){
-  clickTimeVeg = clickTimeVeg +1
-  console.log(clickTimeVeg) //makeshift click counter to switch between filters and not filtering them
-  if (clickTimeVeg % 2 === 0) {
-    vegProducts = products.filter(product => product.type !== "Vegetables");
-    createDiv()
-  } else {
-    vegProducts = products.filter(product => product.type === "Vegetables");
-    console.log(vegProducts);
-    createDiv();
-  }
-}
+// function clickedVeg(){
+//   clickTimeVeg = clickTimeVeg +1
+//   console.log(clickTimeVeg) //makeshift click counter to switch between filters and not filtering them
+//   if (clickTimeVeg % 2 === 0) {
+//     vegProducts = products.filter(product => product.type !== "Vegetables");
+//     createDiv()
+//   } else {
+//     vegProducts = products.filter(product => product.type === "Vegetables");
+//     console.log(vegProducts);
+//     createDiv();
+//   }
+// }
 
-function clickedMeat(){
-  clickTimeMeat = clickTimeMeat +1
-  console.log(clickTimeMeat) //makeshift click counter to swittch between filters and not filtering them
-  if (clickTimeMeat % 2 === 0) {
-    meatProducts = products.filter(product => product.type !== "Meat");
-    createDiv()
-  } else {
-    meatProducts = products.filter(product => product.type === "Meat");
-    console.log(meatProducts);
-    createDiv();
-  }
-}
+// function clickedMeat(){
+//   clickTimeMeat = clickTimeMeat +1
+//   console.log(clickTimeMeat) //makeshift click counter to swittch between filters and not filtering them
+//   if (clickTimeMeat % 2 === 0) {
+//     meatProducts = products.filter(product => product.type !== "Meat");
+//     createDiv()
+//   } else {
+//     meatProducts = products.filter(product => product.type === "Meat");
+//     console.log(meatProducts);
+//     createDiv();
+//   }
+// }
 
-function clickedHoney(){
-  clickTimeHoney = clickTimeHoney + 1;
-  if (clickTimeHoney % 2 === 0) {
-    alert("off")
-  } else {
-    alert("on")
-  }
-}
+// function clickedHoney(){
+//   clickTimeHoney = clickTimeHoney + 1;
+//   if (clickTimeHoney % 2 === 0) {
+//     alert("off")
+//   } else {
+//     alert("on")
+//   }
+// }
 
 function createDiv() {
   $("#productList").html(""); //clears div
   //rearanges "products" to be by price or   alphabeticly.
-  let localProduct = products
-  console.log = localProduct
-  for (var i = 0; i < products.length; i++) {
-    var product = products[i];
+  localProduct = []
+
+  for (var i = 0; i < products.length; i++) { //use for meat setup
+  localProduct.push(products[i]);
+  }
+
+  console.log(localProduct)
+  for (var i = 0; i < localProduct.length; i++) {
 
     // makes a div for each item
     var div = $('<div class="product-box">');
-
     // loads dog!
     var img = $('<img class="meat-img">').attr({
-      src: "/img/" + localProduct.image, // loads specific img
+      src: "../img/" + localProduct.image, // loads specific img
       alt: "photo of " + localProduct.name, // name in alt text for accesibility'
     });
     // adds all the info
@@ -96,7 +98,9 @@ function createDiv() {
     $("#productList").append(div);
   }
 }
-
+function test(){
+  console.log("test")
+}
 function updateProductList() {
   $("#productList").empty(); // Clear existing divs
 
