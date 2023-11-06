@@ -1,7 +1,6 @@
 let clickTimeVeg = 0;
 let clickTimeMeat = 0;
 let clickTimeHoney = 0;
-console.log(clickTimeVeg)
 $(document).ready(function () {
   $.ajax({
     url: "../product-section-content/products.json",
@@ -37,7 +36,7 @@ function sortByType() {
 
 function clickedVeg(){
   clickTimeVeg = clickTimeVeg +1
-  console.log(clickTimeVeg) //makeshift click counter to swittch between filters and not filtering them
+  console.log(clickTimeVeg) //makeshift click counter to switch between filters and not filtering them
   if (clickTimeVeg % 2 === 0) {
     vegProducts = products.filter(product => product.type !== "Vegetables");
     createDiv()
@@ -64,18 +63,17 @@ function clickedMeat(){
 function clickedHoney(){
   clickTimeHoney = clickTimeHoney + 1;
   if (clickTimeHoney % 2 === 0) {
-    const honeyProducts = products.filter(product => product.type !== "Honey");
-    createDiv()
+    alert("off")
   } else {
-    const honeyProducts = products.filter(product => product.type === "Honey");
-    console.log(honeyProducts);
-    createDiv();
+    alert("on")
   }
 }
 
 function createDiv() {
   $("#productList").html(""); //clears div
-
+  //rearanges "products" to be by price or   alphabeticly.
+  let localProduct = products
+  console.log = localProduct
   for (var i = 0; i < products.length; i++) {
     var product = products[i];
 
@@ -84,13 +82,13 @@ function createDiv() {
 
     // loads dog!
     var img = $('<img class="meat-img">').attr({
-      src: "/img/" + product.image, // loads specific img
-      alt: "photo of " + product.name, // name in alt text for accesibility'
+      src: "/img/" + localProduct.image, // loads specific img
+      alt: "photo of " + localProduct.name, // name in alt text for accesibility'
     });
     // adds all the info
 
-    var h2 = $("<h2>").text(product.name);
-    var h3 = $("<h3>").text("£" + product.price + "/per pound");
+    var h2 = $("<h2>").text(localProduct.name);
+    var h3 = $("<h3>").text("£" + localProduct.price + "/per pound");
     // adds both to div
     div.append(img, h2, h3);
 
